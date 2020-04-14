@@ -1,0 +1,19 @@
+.gf-pacifico {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  color: white;
+}
+
+.hero::before {
+  background-image: url("../images/cover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 60% right 100%;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* opacity: 0.25; */
+}

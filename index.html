@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaron Molina | Full-Stack Web Developer</title>
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+  </head>
+  <body>
+    <!-- hero -->
+    <section class="hero is-success is-bold is-fullheight">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item" style="position: relative; padding-bottom: 2rem;" href="./index.html">
+                <h1 class="gf-pacifico">Aaron Molina</h1>
+                <p style="position: absolute; top: 4.5rem; width: 100%;" class="has-text-centered">
+                  FULL-STACK WEB DEVELOPER
+                </p>
+              </a>
+              <span class="navbar-burger burger has-text-light" data-target="navbarMenuHeroA">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-end">
+                <!-- <span class="navbar-item">
+                  <a class="is-link has-text-white" href="./index.html">
+                    <span>Home</span>
+                  </a>
+                </span> -->
+                <span class="navbar-item">
+                  <a class="is-link has-text-white" href="#projects">
+                    <span>Projects</span>
+                  </a>
+                </span>
+                <span class="navbar-item">
+                  <a class="is-link has-text-white" href="#journey">
+                    <span>Experience</span>
+                  </a>
+                </span>
+                <span class="navbar-item">
+                  <a class="button is-link is-inverted" href="https://www.linkedin.com/in/aaronmolinag/">
+                    <span class="icon">
+                      <i class="fab fa-linkedin"></i>
+                    </span>
+                    <span>LinkedIn</span>
+                  </a>
+                </span>
+                <span class="navbar-item">
+                  <a class="button is-white" href="https://github.com/aaronm-git">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Github</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container">
+          <!-- <h1 class="title has-text-centered">Full-Stack Web Developer</h1> -->
+          <div class="card" style="margin-bottom: 8rem;">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img
+                      src="https://pbs.twimg.com/profile_images/1249395219918991360/yuUJhqup_400x400.jpg"
+                      alt="Placeholder image"
+                    />
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 has-text-black">
+                    Aaron Molina
+                    <small class="has-text-grey">Full-Stack Web Developer</small>
+                  </p>
+                  <p class="subtitle is-6">
+                    <a href="https://twitter.com/aaroncodes09" class="has-text-link">
+                      <span class="icon"><i class="fab fa-twitter"></i></span>@aaroncodes09</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="content">
+                Currently looking for new opportunities as a web developer 👨🏽‍💻
+                <br />
+                My current stack is
+                <a href="https://twitter.com/search?q=%23NodeJS">#NodeJs</a>,
+                <a href="https://twitter.com/search?q=%23MongoDB">#MongoDB</a>,
+                <a href="https://twitter.com/search?q=%23React">#React</a>, and
+                <a href="https://twitter.com/search?q=%23javascript">#javascript</a>
+                <br />
+                <a class="button is-link is-pulled-right">
+                  <span class="icon">
+                    <i class="far fa-envelope"></i>
+                  </span>
+                  <span>Contact Me</span></a
+                >
+                <br />
+                <small class="has-text-grey-light">April 13 2020</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero footer: will stick at the bottom -->
+      <!-- <div class="hero-foot">
+        <nav class="tabs">
+          <div class="container">
+            <ul>
+              <li class="is-active"><a>Overview</a></li>
+              <li><a>Modifiers</a></li>
+              <li><a>Grid</a></li>
+              <li><a>Elements</a></li>
+              <li><a>Components</a></li>
+              <li><a>Layout</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div> -->
+    </section>
+    <!-- projects -->
+    <section class="section">
+      <div id="projects" class="level">
+        <h2 class="level-item is-size-2">Projects 🖥️</h2>
+      </div>
+      <div class="columns">
+        <div class="column is-two-fifths">
+          <img src="./public/images/undraw_developer_activity_bv83.svg" style="width: 100%;" />
+        </div>
+        <div class="column">
+          <article class="panel is-dark">
+            <p class="panel-heading">
+              <span class="icon"><i class="fab fa-git-alt"></i></span>
+              Repositories
+            </p>
+            <!-- <p class="panel-tabs">
+              <a class="is-active">All</a>
+              <a>HTML</a>
+              <a>Node</a>
+              <a>React</a>
+              <a>Forks</a>
+            </p> -->
+            <div id="panel-links-container"></div>
+            <div class="panel-block">
+              <a
+                href="https://developer.github.com/v3/repos/#list-repositories-for-a-user"
+                class="has-text-grey is-size-7"
+              >
+                Powered By
+                <img
+                  src="./public/images/GitHub_Logo.png"
+                  alt=""
+                  style="height: 1.5rem; position: relative; top: 6px;"
+                />
+                API
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- timeline -->
+    <section class="section">
+      <div id="journey" class="level">
+        <h2 class="level-item is-size-2">
+          My Journey 🏔
+        </h2>
+      </div>
+      <div class="container is-fullhd">
+        <div class="timeline is-centered">
+          <header class="timeline-header">
+            <span class="tag is-medium is-info">Start</span>
+          </header>
+          <div class="timeline-item is-primary">
+            <div class="timeline-marker is-primary"></div>
+            <div class="timeline-content">
+              <p class="heading">January 2011</p>
+              <p>Miami Dade College - Computer Science 👨🏽‍🎓</p>
+            </div>
+          </div>
+          <header class="timeline-header">
+            <span class="tag is-info">2012</span>
+          </header>
+          <div class="timeline-item is-primary">
+            <div class="timeline-marker is-primary is-image is-32x32">
+              <img src="./public/images/university-of-miami-logo.png" style="height: 100%;" />
+            </div>
+            <div class="timeline-content">
+              <p class="heading">February 2012</p>
+              <p>University of miami - Frontend Development Certified</p>
+            </div>
+          </div>
+          <div class="timeline-item is-primary">
+            <div class="timeline-marker is-primary"></div>
+            <div class="timeline-content">
+              <p class="heading">February 2012</p>
+              <p>Freelance - Web Developer/Web Master</p>
+            </div>
+          </div>
+          <header class="timeline-header">
+            <span class="tag is-info">2014</span>
+          </header>
+          <div class="timeline-item is-primary">
+            <!-- <div class="timeline-marker is-danger is-icon">
+              <i class="fa fa-flag"></i>
+            </div> -->
+            <div class="timeline-marker is-primary is-image is-32x32">
+              <img src="./public/images/geek-squad-logo.png" />
+            </div>
+            <div class="timeline-content">
+              <p class="heading">June 2014</p>
+              <p>Geek Squad - Consultation Agent/Repairs</p>
+            </div>
+          </div>
+          <header class="timeline-header">
+            <span class="tag is-info">2016</span>
+          </header>
+          <div class="timeline-item is-primary">
+            <div class="timeline-marker is-primary is-image is-32x32">
+              <img src="./public/images/practicepanther-logo.jpeg" />
+            </div>
+            <div class="timeline-content">
+              <p class="heading">May 2016</p>
+              <p>PracticePanther - Senior Technical Support Specialist</p>
+            </div>
+          </div>
+          <header class="timeline-header">
+            <span class="tag is-info">2017</span>
+          </header>
+          <div class="timeline-item is-primary">
+            <div class="timeline-marker is-primary"></div>
+            <div class="timeline-content">
+              <p class="heading">May 2017</p>
+              <p>Ironhack - Full-Stack Certified</p>
+            </div>
+          </div>
+          <header class="timeline-header">
+            <span class="tag is-info">2018</span>
+          </header>
+          <div class="timeline-item is-primary">
+            <div class="timeline-marker is-primary"></div>
+            <div class="timeline-content">
+              <p class="heading">February 2018</p>
+              <p>FlyingAcademy - Frontend Developer</p>
+            </div>
+          </div>
+          <header class="timeline-header">
+            <span class="tag is-info">2019</span>
+          </header>
+          <div class="timeline-item is-primary">
+            <div class="timeline-marker is-primary is-image is-32x32">
+              <img src="./public/images/uplyft-logo.jpg" />
+            </div>
+            <div class="timeline-content">
+              <p class="heading">January 2019</p>
+              <p>Uplyft Capital - Full-Stack Web Developer</p>
+            </div>
+          </div>
+          <div class="timeline-item is-primary">
+            <div class="timeline-marker is-primary"></div>
+            <div class="timeline-content">
+              <p class="heading">October 2019</p>
+              <p>Flopool - Full-Stack Web Developer</p>
+            </div>
+          </div>
+          <header class="timeline-header">
+            <span class="tag is-medium is-light">Present</span>
+          </header>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Copyright <i class="far fa-copyright"></i> 2020&nbsp;</strong>Aaron Molina. The source code is
+          licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+        </p>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-timeline@3.0.4/dist/css/bulma-timeline.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="./public/javascript/scripts.js"></script>
+  </body>
+</html>
