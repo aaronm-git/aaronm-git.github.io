@@ -1,0 +1,61 @@
+// 1. Import the initial variables
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
+@import "../../node_modules/bulma/sass/utilities/derived-variables";
+
+// setup custom colors
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
+$sass: #cf649a;
+$sass-invert: findColorInvert($sass);
+$git: #f05133;
+$git-invert: findColorInvert($git);
+$mongodb: #009431;
+$mongodb-invert: findColorInvert($mongodb);
+$bootstrap: #563d7c;
+$bootstrap-invert: findColorInvert($bootstrap);
+$html: #e44d26;
+$html-invert: findColorInvert($html);
+
+// add color variables to the color map.
+$addColors: (
+  "twitter": (
+    $twitter,
+    $twitter-invert,
+  ),
+  "linkedin": (
+    $linkedin,
+    $linkedin-invert,
+  ),
+  "github": (
+    $github,
+    $github-invert,
+  ),
+  "sass": (
+    $sass,
+    $sass-invert,
+  ),
+  "git": (
+    $git,
+    $git-invert,
+  ),
+  "mongodb": (
+    $mongodb,
+    $mongodb-invert,
+  ),
+  "bootstrap": (
+    $bootstrap,
+    $bootstrap-invert,
+  ),
+  "html": (
+    $html,
+    $html-invert,
+  ),
+);
+$colors: map-merge($colors, $addColors);
+
+@import "../../node_modules/bulma/bulma.sass";
