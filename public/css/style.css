@@ -6,31 +6,31 @@
   /* color: white; */
 }
 
-.hero::before {
+.hero.backdrop::before {
   background-image: url("../images/cover.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top 60% right 100%;
   content: "";
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: absolute;
 }
 
-.hero .container .title {
-  font-size: 3.5rem;
+.title.mega {
+  font-size: 3rem;
   font-weight: 900;
 }
 
-.hero .container .subtitle {
+.subtitle.mega {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .top-button {
   position: fixed;
-  right: 5rem;
-  bottom: 5rem;
+  right: 5%;
+  bottom: 5%;
   padding: 1rem 22px;
   border-radius: 100px;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
@@ -40,4 +40,11 @@
 .top-button:hover {
   transform: scale(1.2);
   transition: 0.3s;
+}
+
+#contact .label,
+#contact .help,
+#contact .title,
+#contact .subtitle {
+  color: white;
 }
