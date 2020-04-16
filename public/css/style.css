@@ -6,25 +6,27 @@
   /* color: white; */
 }
 
+.section-title {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 .hero.backdrop::before {
   background-image: url("../images/cover.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top 60% right 100%;
+  background-position: top 50% right 100%;
   content: "";
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: absolute;
 }
 
-.title.mega {
-  font-size: 3rem;
+.hero:first-of-type .title {
   font-weight: 900;
-}
-
-.subtitle.mega {
-  font-size: 2rem;
-  font-weight: 500;
 }
 
 .top-button {
