@@ -26,7 +26,7 @@
     }
   });
 }
-// to top button
+// To top button
 {
   window.addEventListener("scroll", function () {
     const el = document.getElementById("top-button");
@@ -39,6 +39,21 @@
         el.classList.add("is-hidden");
       }
     }
+  });
+}
+// Modal logic
+{
+  const buttons = document.querySelectorAll("[data-target-modal]");
+  buttons.forEach((btn) => {
+    const modal = document.getElementById(btn.dataset.targetModal);
+    btn.addEventListener("click", (e) => {
+      modal.classList.add("is-active");
+      document.querySelector("html").classList.add("is-clipped");
+    });
+    modal.querySelector(".modal-close").addEventListener("click", (e) => {
+      modal.classList.remove("is-active");
+      document.querySelector("html").classList.remove("is-clipped");
+    });
   });
 }
 // anchor smooth scroll

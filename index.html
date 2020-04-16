@@ -13,41 +13,21 @@
     <nav class="navbar is-fixed-top">
       <div class="navbar-brand">
         <a class="navbar-item has-text-success has-text-weight-bold" href="#top">
-          <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" /> -->
           <span class="gf is-uppercase">Aaron Molina</span>
         </a>
-        <a
-          role="button"
-          class="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div id="navbarBasicExample" class="navbar-menu">
+      <div id="navMenu" class="navbar-menu">
         <div class="navbar-start">
-          <!-- <a class="navbar-item" href="#top">
-            <span class="icon"><i class="fas fa-arrow-up"></i></span><span>Top</span>
-          </a> -->
           <a class="navbar-item" href="#about"><span class="has-text-success">#</span>&nbsp;About</a>
           <a class="navbar-item" href="#projects"><span class="has-text-success">#</span>&nbsp;Projects</a>
           <a class="navbar-item" href="#experience"><span class="has-text-success">#</span>&nbsp;Experience</a>
-          <!-- <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">More</a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item">About</a>
-              <a class="navbar-item">Jobs</a>
-              <a class="navbar-item">Contact</a>
-              <hr class="navbar-divider" />
-              <a class="navbar-item">Report an issue</a>
-            </div>
-          </div> -->
+          <a class="navbar-item" href="#contact"><span class="has-text-success">#</span>&nbsp;Contact</a>
         </div>
-
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
@@ -55,19 +35,16 @@
                 <span class="icon">
                   <i class="fab fa-twitter"></i>
                 </span>
-                <!-- <span>Twitter</span> -->
               </a>
               <a class="button is-white has-text-linkedin" href="https://www.linkedin.com/in/aaronmolinag/">
                 <span class="icon">
                   <i class="fab fa-linkedin"></i>
                 </span>
-                <!-- <span>LinkedIn</span> -->
               </a>
               <a class="button is-white has-text-github" href="https://github.com/aaronm-git">
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>
-                <!-- <span>Gihub</span> -->
               </a>
             </div>
           </div>
@@ -75,14 +52,18 @@
       </div>
     </nav>
     <!-- hero -->
-    <section id="top" class="hero is-success is-bold is-fullheight">
+    <section id="top" class="hero backdrop is-success is-bold is-fullheight">
       <div class="hero-body">
-        <div class="container is-uppercase">
-          <figure class="image is-128x128">
+        <div class="container">
+          <figure class="image is-128x128" style="margin-bottom: 1.5rem;">
             <img class="is-rounded" src="https://i.imgur.com/bjF59oV.jpg?1" />
           </figure>
-          <p class="title">Hi, I'm Aaron</p>
-          <p class="subtitle">A Full-Stack Web Developer</p>
+          <p class="title mega is-uppercase">Hi, I'm Aaron</p>
+          <p class="subtitle mega is-uppercase">A Full-Stack Web Developer</p>
+          <a href="#contact" class="button is-medium is-success is-inverted has-capitalized">
+            <span class="icon"><i class="fas fa-envelope"></i></span>
+            <span>Contact</span>
+          </a>
         </div>
       </div>
     </section>
@@ -93,18 +74,12 @@
         <h1 class="level-item is-size-1 title is-uppercase">About</h1>
         <div class="columns">
           <div class="column">
+            <h2 class="subtitle is-size-3">Summary</h2>
             <div class="box">
               <article class="media">
-                <div class="media-left">
-                  <figure class="image is-64x64">
-                    <img src="https://i.imgur.com/bjF59oV.jpg?1" alt="Image" />
-                  </figure>
-                </div>
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <strong>Aaron Molina</strong> <small>Full-Stack Web Devleoper</small>
-                      <br />
                       Since beginning my journey as a freelance developer nearly 8 years ago, I've done work for small
                       and large companies, consulted for startups, and collaborated with talented teams to create
                       digital products for both business and consumer use. I'm quietly confident, naturally curious, and
@@ -152,7 +127,7 @@
                 </span>
                 <span class="has-text-weight-medium">MongoDB</span>
               </span>
-              <span class="tag is-link is-medium">
+              <span class="tag is-medium has-text-info">
                 <span class="icon">
                   <i class="fab fa-react"></i>
                 </span>
@@ -180,30 +155,8 @@
                 plus more...
               </span>
             </div>
-            <!-- <div class="card">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4">John Smith</p>
-                    <p class="subtitle is-6">@johnsmith</p>
-                  </div>
-                </div>
-  
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a> .
-                  <a href="#">#css</a> <a href="#">#responsive</a>
-                  <br />
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                </div>
-              </div>
-            </div> -->
           </div>
-          <div class="column is-two-fifths">
+          <div class="column is-two-fifths is-hidden-touch">
             <img src="./public/images/profile.svg" style="width: 100%;" />
           </div>
         </div>
@@ -212,7 +165,7 @@
       <section id="projects" class="section is-medium">
         <h1 class="level-item is-size-1 title is-uppercase">Projects</h1>
         <div class="columns">
-          <div class="column is-two-fifths">
+          <div class="column is-two-fifths is-hidden-touch">
             <img src="./public/images/undraw_developer_activity_bv83.svg" style="width: 100%;" />
           </div>
           <div class="column">
@@ -229,7 +182,7 @@
                 <a>Forks</a>
               </p> -->
               <div id="panel-links-container"></div>
-              <div class="panel-block">
+              <div class="panel-block" style="justify-content: space-between;">
                 <a
                   href="https://developer.github.com/v3/repos/#list-repositories-for-a-user"
                   class="has-text-grey is-size-7"
@@ -242,9 +195,44 @@
                   />
                   API
                 </a>
+                <a class="button" data-target-modal="github-source-code">Source Code</a>
               </div>
             </article>
           </div>
+        </div>
+        <div id="github-source-code" class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <pre class="box prettyprint lang-js">
+
+  // Github API Logic--------
+  // This website's ID (sames as it's repo ID)
+  const websiteId = 255731256;
+  // Fetch repos through API using async/await
+  const repos = await fetch("https://api.github.com/users/aaronm-git/repos").then((res) => res.json());
+  // Build links inside panel-links-container
+  const panelLinksContainer = document.getElementById("panel-links-container");
+  // Sort repos by recently updated
+  repos.sort((a, b) => (new Date(a.updated_at) < new Date(b.updated_at) ? 1 : -1));
+  // Iterate each repo to build it's link element
+  repos.forEach((repo) => {
+    // Get prebuilt panel link HTML from function return
+    const panelLinkHTML = stringToHTML(getPanelLinkHTML());
+    panelLinkHTML.setAttribute("href", repo.html_url);
+    let iClassList = panelLinkHTML.querySelector("i").classList;
+    repo.fork ? iClassList.add("fas", "fa-code-branch") : iClassList.add("fas", "fa-book");
+    panelLinkHTML.querySelector("span.repoName").innerText = repo.name;
+    if (websiteId === repo.id) {
+      const tagHTML = stringToHTML(`&lt;div class="tags" style="margin-left: 1rem;">&lt;span&gt;this Website&lt;/span&gt;&lt;/div&gt;`);
+      panelLinkHTML.append(tagHTML);
+    }
+    // Add link element to DOM
+    panelLinksContainer.append(panelLinkHTML);
+  });
+      </pre
+            >
+          </div>
+          <button class="modal-close is-large" aria-label="close"></button>
         </div>
       </section>
       <!-- experience -->
@@ -383,13 +371,56 @@
         </div>
       </section>
     </div>
-
-    <div class="top-btn-container is-hidden" id="top-botton">
+    <!-- contact -->
+    <section id="contact" class="hero is-medium is-dark is-bold">
+      <div class="hero-body">
+        <h2 class="level-item is-size-1 title is-uppercase">Contact</h2>
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <form action="https://formspree.io/xaydzyqa" method="POST">
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Your first name and last name" name="name" required />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" type="email" placeholder="Your email" name="_replyto" required />
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" placeholder="Your message" name="message" required></textarea>
+                </div>
+              </div>
+              <input
+                class="input"
+                type="hidden"
+                value="aaronm-git.github.io: Contact Form Submission"
+                name="_subject"
+              />
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-success is-outlined">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- to top button -->
+    <div class="top-btn-container is-hidden" id="top-button">
       <a href="#top" class="top-button has-background-success has-text-white">
         <i class="fas fa-arrow-up"></i>
       </a>
     </div>
-
     <!-- footer -->
     <footer class="footer">
       <div class="content has-text-centered">
@@ -402,15 +433,16 @@
         </a>
       </div>
     </footer>
-
     <!-- dependancies -->
     <div>
       <!-- stylesheets -->
       <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-timeline@3.0.4/dist/css/bulma-timeline.min.css" />
+      <link rel="stylesheet" href="./public/css/google-code-prettier.min.css" />
       <!-- scripts -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
       <script src="./public/javascript/scripts.js"></script>
     </div>
   </body>
