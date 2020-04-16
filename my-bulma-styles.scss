@@ -1,7 +1,7 @@
 // 1. Import the initial variables
-@import "../../node_modules/bulma/sass/utilities/initial-variables";
-@import "../../node_modules/bulma/sass/utilities/functions";
-@import "../../node_modules/bulma/sass/utilities/derived-variables";
+@import "./node_modules/bulma/sass/utilities/initial-variables";
+@import "./node_modules/bulma/sass/utilities/functions";
+@import "./node_modules/bulma/sass/utilities/derived-variables";
 
 // setup custom colors
 $linkedin: #0077b5;
@@ -58,4 +58,4 @@ $addColors: (
 );
 $colors: map-merge($colors, $addColors);
 
-@import "../../node_modules/bulma/bulma.sass";
+@import "./node_modules/bulma/bulma.sass";
