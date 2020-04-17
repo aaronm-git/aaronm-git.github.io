@@ -20,7 +20,8 @@ $bootstrap: #563d7c;
 $bootstrap-invert: findColorInvert($bootstrap);
 $html: #e44d26;
 $html-invert: findColorInvert($html);
-
+// other variable
+$dimensions: 16 24 32 48 64 96 128 256;
 // add color variables to the color map.
 $addColors: (
   "twitter": (
