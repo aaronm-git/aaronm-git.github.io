@@ -15,11 +15,11 @@
   align-items: flex-start;
 }
 
-.is-justified-start-desktop img {
+.is-justified-start-desktop > img {
   display: block;
   margin: 0 auto 0 0;
 }
-.is-justified-end-desktop img {
+.is-justified-end-desktop > img {
   display: block;
   margin: 0 0 0 auto;
 }
