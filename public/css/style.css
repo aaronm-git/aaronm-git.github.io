@@ -15,8 +15,29 @@
   align-items: flex-start;
 }
 
-.column.is-two-fifths {
-  display: flex;
+.is-justified-start-desktop img {
+  display: block;
+  margin: 0 auto 0 0;
+}
+.is-justified-end-desktop img {
+  display: block;
+  margin: 0 0 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .is-column-mobile-only {
+    display: flex;
+    flex-direction: column;
+  }
+  .is-reversed-mobile-only {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .is-justified-start-desktop img,
+  .is-justified-end-desktop img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .section-title {

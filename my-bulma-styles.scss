@@ -59,26 +59,4 @@ $addColors: (
 );
 $colors: map-merge($colors, $addColors);
 
-.is-justified-start-desktop {
-  justify-content: flex-start;
-}
-.is-justified-end-desktop {
-  justify-content: flex-end;
-}
-
-@media only screen and (max-width: 768px) {
-  .is-column-mobile-only {
-    display: flex;
-    flex-direction: column;
-  }
-  .is-reversed-mobile-only {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .is-justified-start-desktop,
-  .is-justified-end-desktop {
-    justify-content: center;
-  }
-}
-
 @import "./node_modules/bulma/bulma.sass";
