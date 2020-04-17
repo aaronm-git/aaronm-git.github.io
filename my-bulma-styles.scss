@@ -21,7 +21,7 @@ $bootstrap-invert: findColorInvert($bootstrap);
 $html: #e44d26;
 $html-invert: findColorInvert($html);
 // other variable
-$dimensions: 16 24 32 48 64 96 128 256;
+$dimensions: 16 24 32 48 64 96 128 200;
 // add color variables to the color map.
 $addColors: (
   "twitter": (
@@ -58,5 +58,27 @@ $addColors: (
   ),
 );
 $colors: map-merge($colors, $addColors);
+
+.is-justified-start-desktop {
+  justify-content: flex-start;
+}
+.is-justified-end-desktop {
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  .is-column-mobile-only {
+    display: flex;
+    flex-direction: column;
+  }
+  .is-reversed-mobile-only {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .is-justified-start-desktop,
+  .is-justified-end-desktop {
+    justify-content: center;
+  }
+}
 
 @import "./node_modules/bulma/bulma.sass";

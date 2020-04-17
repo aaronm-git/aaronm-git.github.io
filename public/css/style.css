@@ -6,12 +6,26 @@
   /* color: white; */
 }
 
+.column > img {
+  width: 80%;
+  max-width: 350px;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.column.is-two-fifths {
+  display: flex;
+}
+
 .section-title {
-  font-size: 2rem;
-  font-weight: bolder;
+  font-size: 3rem;
+  font-weight: lighter;
   text-transform: uppercase;
   margin-bottom: 1rem;
   text-align: center;
+  color: grey;
 }
 
 .hero.backdrop::before {
