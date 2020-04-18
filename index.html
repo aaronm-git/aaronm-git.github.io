@@ -135,70 +135,114 @@
           <div class="column is-two-fifths is-justified-start-desktop">
             <img src="./public/images/webdev.svg" />
           </div>
-          <div class="column is-justified-start-desktop tags">
-            <span class="tag is-html">
-              <span class="icon">
-                <i class="fab fa-html5"></i>
+          <div class="column is-justified-start-desktop is-relative">
+            <!-- search -->
+            <div class="field">
+              <p class="control has-icons-left">
+                <input id="search-skills" class="input is-primary" type="text" placeholder="Search skills" />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-search"></i>
+                </span>
+              </p>
+            </div>
+            <div id="skill-container" class="tags">
+              <span class="tag is-medium is-html">
+                <span class="icon">
+                  <i class="fab fa-html5"></i>
+                </span>
+                <span class="has-text-weight-medium">HTML5</span>
               </span>
-              <span class="has-text-weight-medium">HTML5</span>
-            </span>
-            <span class="tag is-info">
-              <span class="icon">
-                <i class="fab fa-css3"></i>
+              <span class="tag is-medium is-info">
+                <span class="icon">
+                  <i class="fab fa-css3"></i>
+                </span>
+                <span class="has-text-weight-medium">CSS3</span>
               </span>
-              <span class="has-text-weight-medium">CSS3</span>
-            </span>
-            <span class="tag is-sass">
-              <span class="icon">
-                <i class="fab fa-sass"></i>
+              <span class="tag is-medium is-sass">
+                <span class="icon">
+                  <i class="fab fa-sass"></i>
+                </span>
+                <span class="has-text-weight-medium">Sass</span>
               </span>
-              <span class="has-text-weight-medium">Sass</span>
-            </span>
-            <span class="tag is-warning">
-              <span class="icon">
-                <i class="fab fa-js"></i>
+              <span class="tag is-medium is-warning">
+                <span class="icon">
+                  <i class="fab fa-js"></i>
+                </span>
+                <span class="has-text-weight-medium">JavaScript</span>
               </span>
-              <span class="has-text-weight-medium">JavaScript</span>
-            </span>
-            <span class="tag has-text-info">
-              <span class="icon">
-                <i class="fab fa-react"></i>
+              <span class="tag is-medium has-text-info">
+                <span class="icon">
+                  <i class="fab fa-react"></i>
+                </span>
+                <span class="has-text-weight-medium">React</span>
               </span>
-              <span class="has-text-weight-medium">React</span>
-            </span>
-            <span class="tag is-dark">
-              <span class="icon">
-                <i class="fab fa-node-js"></i>
+              <span class="tag is-medium is-dark">
+                <span class="icon">
+                  <i class="fab fa-node-js"></i>
+                </span>
+                <span class="has-text-weight-medium">Node.js</span>
               </span>
-              <span class="has-text-weight-medium">Node.js</span>
-            </span>
-            <span class="tag is-mongodb">
-              <span class="icon">
-                <i class="fas fa-database"></i>
+              <span class="tag is-medium is-mongodb">
+                <span class="icon">
+                  <i class="fas fa-database"></i>
+                </span>
+                <span class="has-text-weight-medium">MongoDB</span>
               </span>
-              <span class="has-text-weight-medium">MongoDB</span>
-            </span>
-            <span class="tag is-danger">
-              <span class="icon">
-                <i class="fas fa-mobile-alt"></i>
+              <span class="tag is-medium is-danger">
+                <span class="icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </span>
+                <span class="has-text-weight-medium">Responsive Design</span>
               </span>
-              <span class="has-text-weight-medium">Responsive Design</span>
-            </span>
-            <span class="tag is-bootstrap">
-              <span class="icon">
-                <i class="fab fa-bootstrap"></i>
+              <span class="tag is-medium is-bootstrap">
+                <span class="icon">
+                  <i class="fab fa-bootstrap"></i>
+                </span>
+                <span class="has-text-weight-medium">Bootstrap 4</span>
               </span>
-              <span class="has-text-weight-medium">Bootstrap 4</span>
-            </span>
-            <span class="tag is-git">
-              <span class="icon">
-                <i class="fab fa-git-alt"></i>
+              <span class="tag is-medium is-git">
+                <span class="icon">
+                  <i class="fab fa-git-alt"></i>
+                </span>
+                <span class="has-text-weight-medium">Git</span>
               </span>
-              <span class="has-text-weight-medium">Git</span>
-            </span>
-            <small class="has-text-grey">
-              plus more...
-            </small>
+            </div>
+            <p
+              id="no-skill"
+              class="is-hidden has-text-centered has-background-light"
+              style="padding: 0.75rem; border-radius: 4px; margin-top: -1rem; margin-bottom: 1rem;"
+            >
+              <i class="fas fa-poo"></i>&nbsp; I don't know this yet.<br /><strong>But I can learn!</strong>
+            </p>
+            <a class="button" data-target-modal="skill-search-source-code">Source Code</a>
+            <div id="skill-search-source-code" class="modal">
+              <div class="modal-background"></div>
+              <div class="modal-content">
+                <pre class="box prettyprint lang-js">
+
+  // Skill Search Logic--------
+  const searchInput = document.getElementById("search-skills");
+  const tags = document.querySelectorAll("#skill-container .tag");
+  const noResultsEl = document.getElementById("no-skill");
+  // Add onkeyup function on search input
+  searchInput.onkeyup = (e) => {
+    // Initialize RegExp with dynamic variable and case insensetive
+    const regex = new RegExp(`${searchInput.value}`, "i");
+    // Test each elementNode for regex match
+    tags.forEach((tag) =>
+      tag.innerText.match(regex) ? tag.classList.remove("is-hidden") : tag.classList.add("is-hidden")
+    );
+    // If no matches return, show conditional element
+    document.querySelectorAll("#skill-container .tag.is-hidden").length ===
+    document.querySelectorAll("#skill-container .tag").length
+      ? noResultsEl.classList.remove("is-hidden")
+      : noResultsEl.classList.add("is-hidden");
+  };
+          </pre
+                >
+              </div>
+              <button class="modal-close is-large" aria-label="close"></button>
+            </div>
           </div>
         </div>
       </section>

@@ -90,6 +90,37 @@
   });
 })();
 
+// Skill Search Logic
+{
+  const searchInput = document.getElementById("search-skills");
+  const tags = document.querySelectorAll("#skill-container .tag");
+  const noResultsEl = document.getElementById("no-skill");
+  // Add onkeyup function on search input
+  searchInput.onkeyup = (e) => {
+    // Initialize RegExp with dynamic variable and case insensetive
+    const regex = new RegExp(`${searchInput.value}`, "i");
+    // Test each elementNode for regex match
+    tags.forEach((tag) =>
+      tag.innerText.match(regex) ? tag.classList.remove("is-hidden") : tag.classList.add("is-hidden")
+    );
+    // If no matches return, show conditional element
+    document.querySelectorAll("#skill-container .tag.is-hidden").length ===
+    document.querySelectorAll("#skill-container .tag").length
+      ? noResultsEl.classList.remove("is-hidden")
+      : noResultsEl.classList.add("is-hidden");
+  };
+}
+
+function getSkillHTML(skill) {
+  return `
+  <span class="tag is-${skill.name}">
+    <span class="icon">
+      <i class="${skill.faName}"></i>
+    </span>
+    <span class="has-text-weight-medium">${skill.name}</span>
+  </span>`;
+}
+
 // utils
 function stringToHTML(str) {
   var dom = document.createElement("div");
