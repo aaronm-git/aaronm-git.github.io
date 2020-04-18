@@ -19,7 +19,7 @@
     <nav class="navbar is-fixed-top">
       <div class="navbar-brand">
         <a class="navbar-item has-text-primary has-text-weight-bold" href="#top">
-          <span class="gf is-uppercase">Aaron Molina</span>
+          <span class="is-uppercase">Aaron Molina</span>
         </a>
         <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
@@ -113,7 +113,7 @@
       <!-- about -->
       <section id="about" class="section">
         <h1 class="section-title">About</h1>
-        <div class="columns is-reversed-mobile-only">
+        <div class="columns is-reversed-mobile-only is-variable is-8">
           <div class="column is-justified-start-desktop">
             <p>
               Since beginning my journey as a freelance developer nearly 8 years ago, I've done work for small and large
@@ -131,7 +131,7 @@
       <!-- skills -->
       <section id="skills" class="section">
         <h2 class="section-title">Skills</h2>
-        <div class="columns is-column-mobile-only">
+        <div class="columns is-column-mobile-only is-variable is-8">
           <div class="column is-two-fifths is-justified-start-desktop">
             <img src="./public/images/webdev.svg" />
           </div>
@@ -205,7 +205,7 @@
       <!-- projects -->
       <section id="projects" class="section">
         <h1 class="section-title">Projects</h1>
-        <div class="columns is-reversed-mobile-only">
+        <div class="columns is-reversed-mobile-only is-variable is-8">
           <div class="column is-justified-start-desktop">
             <article class="panel is-dark has-background-white">
               <p class="panel-heading">
@@ -289,7 +289,7 @@
               <span class="tag is-medium is-primary">2011</span>
             </header>
             <div class="timeline-item is-primary">
-              <div class="timeline-marker is-icon is-primary">
+              <div class="timeline-marker is-primary is-icon">
                 <i class="fas fa-graduation-cap"></i>
               </div>
               <div class="timeline-content">
@@ -549,112 +549,126 @@
     <!-- contact -->
     <section id="contact" class="hero is-dark is-bold">
       <div class="hero-body">
-        <h2 class="section-title">Contact</h2>
-        <div class="columns is-variable is-5">
-          <div class="column">
-            <div class="box">
-              <h2 class="subtitle has-text-grey">
-                <span class="icon">
-                  <i class="fas fa-address-card"></i>
-                </span>
-                <!-- My Contact Info -->
-              </h2>
-              <img
-                src="./public/images/contact.svg"
-                style="
-                  max-width: 280px;
-                  width: 100%;
-                  display: block;
-                  margin-left: auto;
-                  margin-right: auto;
-                  position: relative;
-                  top: -2rem;
-                  margin-bottom: -1.5rem;
-                "
-              />
-              <table class="table is-fullwidth">
-                <tbody>
-                  <tr>
-                    <td>
-                      <i class="fas fa-phone-alt"></i>
-                      <a href="tel:3054149289">305-414-9289</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="fas fa-envelope"></i>
-                      <a href="mailto:hireaaron@icloud.com">hireaaron@icloud.com</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="fab fa-twitter"></i>
-                      <a href="https://twitter.com/aaroncodes09">@aaroncodes09</a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <p>
-                Normally Available <br />
-                <strong>Monday - Friday</strong>, from 9 am to 5 pm
-              </p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="box">
-              <h2 class="subtitle has-text-grey">
-                <span class="icon">
-                  <i class="fas fa-envelope"></i>
-                </span>
-                <!-- Send Me A Message -->
-              </h2>
-              <form action="https://formspree.io/xaydzyqa" method="POST">
-                <div class="field">
-                  <label class="label">Name</label>
-                  <div class="control">
-                    <input class="input" type="text" placeholder="Your first name and last name" name="name" required />
-                  </div>
-                </div>
-                <div class="field">
-                  <label class="label">Email</label>
-                  <div class="control has-icons-left has-icons-right">
-                    <input class="input" type="email" placeholder="Your email" name="_replyto" required />
-                    <span class="icon is-small is-left">
-                      <i class="fas fa-envelope"></i>
-                    </span>
-                  </div>
-                </div>
-                <div class="field">
-                  <label class="label">Message</label>
-                  <div class="control">
-                    <textarea class="textarea" placeholder="Your message" name="message" required></textarea>
-                  </div>
-                </div>
-                <input
-                  class="input"
-                  type="hidden"
-                  value="aaronm-git.github.io: Contact Form Submission"
-                  name="_subject"
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <div class="columns is-variable is-5">
+            <div class="column">
+              <div class="box">
+                <h2 class="subtitle has-text-grey">
+                  <span class="icon">
+                    <i class="fas fa-address-card"></i>
+                  </span>
+                  <!-- My Contact Info -->
+                </h2>
+                <img
+                  src="./public/images/contact.svg"
+                  style="
+                    max-width: 280px;
+                    width: 100%;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    position: relative;
+                    top: -2rem;
+                    margin-bottom: -1.5rem;
+                  "
                 />
-                <div class="field is-grouped">
-                  <div class="control">
-                    <button class="button is-primary">
-                      <span class="icon">
-                        <i class="fa fa-paper-plane"></i>
-                      </span>
-                      <span>Send</span>
-                    </button>
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td><i class="fas fa-map-pin has-text-primary"></i> Miami, Florida</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="tel:3054149289" class="has-text-primary"
+                          ><i class="fas fa-phone-alt"></i> 305-414-9289</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="mailto:hireaaron@icloud.com" class="has-text-primary"
+                          ><i class="fas fa-envelope"></i> hireaaron@icloud.com</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="https://twitter.com/aaroncodes09" class="has-text-primary"
+                          ><i class="fab fa-twitter"></i> @aaroncodes09</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>
+                  Normally Available <br />
+                  <strong>Monday - Friday</strong>, from 9 am to 5 pm, EST
+                </p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="box">
+                <h2 class="subtitle has-text-grey">
+                  <span class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <!-- Send Me A Message -->
+                </h2>
+                <form action="https://formspree.io/xaydzyqa" method="POST">
+                  <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                      <input
+                        class="input"
+                        type="text"
+                        placeholder="Your first name and last name"
+                        name="name"
+                        required
+                      />
+                    </div>
                   </div>
-                </div>
-                <a href="https://formspree.io" class="is-block has-text-right has-text-grey">
-                  <small>Powered By</small>
-                  <img
-                    src="./public/images/formspree-logo.png"
-                    alt="powered by formspree.io"
-                    style="height: 22px; margin-left: 6px; position: relative; top: 6px;"
+                  <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <input class="input" type="email" placeholder="Your email" name="_replyto" required />
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                      <textarea class="textarea" placeholder="Your message" name="message" required></textarea>
+                    </div>
+                  </div>
+                  <input
+                    class="input"
+                    type="hidden"
+                    value="aaronm-git.github.io: Contact Form Submission"
+                    name="_subject"
                   />
-                </a>
-              </form>
+                  <div class="field is-grouped">
+                    <div class="control">
+                      <button class="button is-primary">
+                        <span class="icon">
+                          <i class="fa fa-paper-plane"></i>
+                        </span>
+                        <span>Send</span>
+                      </button>
+                    </div>
+                  </div>
+                  <a href="https://formspree.io" class="is-block has-text-right has-text-grey">
+                    <small>Powered By</small>
+                    <img
+                      src="./public/images/formspree-logo.png"
+                      alt="powered by formspree.io"
+                      style="height: 22px; margin-left: 6px; position: relative; top: 6px;"
+                    />
+                  </a>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -679,16 +693,13 @@
       </div>
     </footer>
     <!-- dependancies -->
-    <div>
+    <dependancies>
       <!-- stylesheets -->
-      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-timeline@3.0.4/dist/css/bulma-timeline.min.css" />
       <link rel="stylesheet" href="./public/css/google-code-prettier.min.css" />
       <!-- scripts -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
       <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
       <script src="./public/javascript/scripts.js"></script>
-    </div>
+    </dependancies>
   </body>
 </html>
