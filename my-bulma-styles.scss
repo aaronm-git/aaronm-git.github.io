@@ -70,3 +70,4 @@ $addColors: (
 $colors: map-merge($colors, $addColors);
 
 @import "./node_modules/bulma/bulma.sass";
+@import "./node_modules/bulma-timeline/src/sass/index.sass";

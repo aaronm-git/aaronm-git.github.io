@@ -1,14 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-
-.gf {
-  /* font-family: "Permanent Marker", cursive; */
-  /* font-size: 3rem; */
-  /* color: white; */
-}
-
 .column > img {
-  width: 80%;
-  max-width: 350px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .align-start {
