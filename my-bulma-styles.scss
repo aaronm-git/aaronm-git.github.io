@@ -3,6 +3,10 @@
 @import "./node_modules/bulma/sass/utilities/functions";
 @import "./node_modules/bulma/sass/utilities/derived-variables";
 
+$primary: $green;
+$primary-invert: findColorInvert($green);
+$primary-light: findLightColor($green);
+$primary-dark: findDarkColor($green);
 // setup custom colors
 $linkedin: #0077b5;
 $linkedin-invert: findColorInvert($linkedin);
@@ -24,6 +28,12 @@ $html-invert: findColorInvert($html);
 $dimensions: 16 24 32 48 64 96 128 200;
 // add color variables to the color map.
 $addColors: (
+  "primary": (
+    $primary,
+    $primary-invert,
+    $primary-light,
+    $primary-dark,
+  ),
   "twitter": (
     $twitter,
     $twitter-invert,

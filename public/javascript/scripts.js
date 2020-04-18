@@ -82,7 +82,7 @@
     panelLinkHTML.querySelector("span.repoName").innerText = repo.name;
     if (websiteId === repo.id) {
       const tagHTML = stringToHTML(
-        `<div class="tags" style="margin-left: 1rem;"><span class="tag is-success is-light heading">this Website</span></div>`
+        `<div class="tags" style="margin-left: 1rem;"><span class="tag is-primary is-light heading">this Website</span></div>`
       );
       panelLinkHTML.append(tagHTML);
     }
