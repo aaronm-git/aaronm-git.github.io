@@ -42,7 +42,7 @@
 }
 
 .hero.backdrop::before {
-  background-image: url("../images/cover.png");
+  background-image: url("../images/cover.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top 50% right 100%;
