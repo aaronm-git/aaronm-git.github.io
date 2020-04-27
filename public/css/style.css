@@ -100,3 +100,19 @@
     max-height: 100%;
   }
 }
+
+.is-expand {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+}
+
+.tile .image::before {
+  content: "";
+  background-image: linear-gradient(to top, white, rgb(255, 255, 255, 0.75), rgb(255, 255, 255, 0));
+  position: absolute;
+  height: 100px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

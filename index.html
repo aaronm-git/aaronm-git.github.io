@@ -344,34 +344,6 @@
               <i class="fas fa-poo"></i>&nbsp; I don't know that yet.<br /><strong>But I can learn!</strong>
             </p>
             <a class="button" data-target-modal="skill-search-source-code">Source Code</a>
-            <div id="skill-search-source-code" class="modal">
-              <div class="modal-background"></div>
-              <div class="modal-content">
-                <pre class="box prettyprint lang-js">
-
-  // Skill Search Logic--------
-  const searchInput = document.getElementById("search-skills");
-  const tags = document.querySelectorAll("#skill-container .tag");
-  const noResultsEl = document.getElementById("no-skill");
-  // Add onkeyup function on search input
-  searchInput.onkeyup = (e) => {
-    // Initialize RegExp with dynamic variable and case insensetive
-    const regex = new RegExp(`${searchInput.value}`, "i");
-    // Test each elementNode for regex match
-    tags.forEach((tag) =>
-      tag.innerText.match(regex) ? tag.classList.remove("is-hidden") : tag.classList.add("is-hidden")
-    );
-    // If no matches return, show conditional element
-    document.querySelectorAll("#skill-container .tag.is-hidden").length ===
-    document.querySelectorAll("#skill-container .tag").length
-      ? noResultsEl.classList.remove("is-hidden")
-      : noResultsEl.classList.add("is-hidden");
-  };
-          </pre
-                >
-              </div>
-              <button class="modal-close is-large" aria-label="close"></button>
-            </div>
           </div>
         </div>
       </section>
@@ -381,10 +353,7 @@
         <div class="columns is-reversed-mobile-only">
           <div class="column is-justified-start-desktop">
             <article class="panel is-dark has-background-white">
-              <p class="panel-heading">
-                <span class="icon"><i class="fab fa-git-alt"></i></span>
-                Repositories
-              </p>
+              <p class="panel-heading"><i class="fab fa-git-alt"></i>&nbsp;&nbsp;Repositories</p>
               <div id="panel-links-container"></div>
               <div class="panel-block" style="justify-content: space-between;">
                 <a
@@ -408,39 +377,181 @@
             <img src="./public/images/git.svg" />
           </div>
         </div>
-        <div id="github-source-code" class="modal">
-          <div class="modal-background"></div>
-          <div class="modal-content">
-            <pre class="box prettyprint lang-js">
-
-  // Github API Logic--------
-  // This website's ID (sames as it's repo ID)
-  const websiteId = 255731256;
-  // Fetch repos through API using async/await
-  const repos = await fetch("https://api.github.com/users/aaronm-git/repos").then((res) => res.json());
-  // Build links inside panel-links-container
-  const panelLinksContainer = document.getElementById("panel-links-container");
-  // Sort repos by recently updated
-  repos.sort((a, b) => (new Date(a.updated_at) < new Date(b.updated_at) ? 1 : -1));
-  // Iterate each repo to build it's link element
-  repos.forEach((repo) => {
-    // Get prebuilt panel link HTML from function return
-    const panelLinkHTML = stringToHTML(getPanelLinkHTML());
-    panelLinkHTML.setAttribute("href", repo.html_url);
-    let iClassList = panelLinkHTML.querySelector("i").classList;
-    repo.fork ? iClassList.add("fas", "fa-code-branch") : iClassList.add("fas", "fa-book");
-    panelLinkHTML.querySelector("span.repoName").innerText = repo.name;
-    if (websiteId === repo.id) {
-      const tagHTML = stringToHTML(`&lt;div class="tags" style="margin-left: 1rem;">&lt;span&gt;this Website&lt;/span&gt;&lt;/div&gt;`);
-      panelLinkHTML.append(tagHTML);
-    }
-    // Add link element to DOM
-    panelLinksContainer.append(panelLinkHTML);
-  });
-      </pre
-            >
+        <div class="tile is-ancestor">
+          <div class="tile is-4 is-vertical is-parent">
+            <div class="tile is-child box">
+              <p class="title">React.js Todo List</p>
+              <p>
+                A daily todo list app using React.js to help users keep track of their daily tasks.
+              </p>
+              <figure class="image is-relative" style="height: 200px; overflow: hidden; margin: 0.75rem 0;">
+                <img src="./public/images/react-todo-app-screenshot.png" />
+                <div class="buttons is-expand">
+                  <button type="button" class="button is-primary" data-target-modal="todo-image">
+                    <span class="icon">
+                      <i class="fas fa-eye"></i>
+                    </span>
+                    <span>
+                      Preview
+                    </span>
+                  </button>
+                  <a href="/react-todo-app" class="button is-link is-rounded">
+                    <span class="icon">
+                      <i class="fas fa-external-link-alt"></i>
+                    </span>
+                    <span>
+                      Tour
+                    </span>
+                  </a>
+                </div>
+              </figure>
+              <h5 class="subtitle">Technologies Used</h5>
+              <div class="tags">
+                <span class="tag">
+                  HTML
+                </span>
+                <span class="tag">
+                  CSS
+                </span>
+                <span class="tag">
+                  Reactjs
+                </span>
+                <span class="tag">
+                  JSX
+                </span>
+                <span class="tag">
+                  Git
+                </span>
+                <span class="tag">
+                  Tilt.js
+                </span>
+                <span class="tag">
+                  Bulma
+                </span>
+              </div>
+            </div>
+            <div class="tile is-child box">
+              <p class="title">
+                Personal Site
+                <span class="tag is-primary is-light">
+                  THIS WEBSITE
+                </span>
+              </p>
+              <p>
+                This website is meant to showcase my web development and design skills.
+              </p>
+              <h5 class="subtitle">Technologies Used</h5>
+              <div class="tags">
+                <span class="tag">
+                  HTML
+                </span>
+                <span class="tag">
+                  CSS
+                </span>
+                <span class="tag">
+                  Git
+                </span>
+                <span class="tag">
+                  Bulma
+                </span>
+                <span class="tag">
+                  Bulma
+                </span>
+                <span class="tag">
+                  Sass
+                </span>
+                <span class="tag">
+                  NPM
+                </span>
+                <span class="tag">
+                  Mobile Responsive
+                </span>
+              </div>
+            </div>
           </div>
-          <button class="modal-close is-large" aria-label="close"></button>
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <p class="title">Ripple Platform</p>
+              <p>
+                Pool Cleaning Service CRM Cloud Software. Ripple Platform is designed to help you manage your business
+                online. Track all your customers, each with the ability to have multiple locations and bodies of water.
+                Always have up-to-date contact information, wherever you go. Everything you need to customize and
+                optimize routes, along with tracking all your service stop data and pool vitals.
+              </p>
+              <figure class="image is-relative" style="height: 400px; overflow: hidden; margin: 0.75rem 0;">
+                <img src="./public/images/ripple-platform-screenshot.png" />
+                <div class="buttons is-expand">
+                  <button type="button" class="button is-primary" data-target-modal="rp-image">
+                    <span class="icon">
+                      <i class="fas fa-eye"></i>
+                    </span>
+                    <span>
+                      Preview
+                    </span>
+                  </button>
+                  <a href="https://app.ripple-platform.com" class="button is-link is-rounded">
+                    <span class="icon">
+                      <i class="fas fa-external-link-alt"></i>
+                    </span>
+                    <span>
+                      Tour
+                    </span>
+                  </a>
+                </div>
+              </figure>
+              <h5 class="subtitle">Technologies Used</h5>
+              <div class="tags">
+                <span class="tag">
+                  HTML
+                </span>
+                <span class="tag">
+                  JavaScript
+                </span>
+                <span class="tag">
+                  Node.js
+                </span>
+                <span class="tag">
+                  MongoDB
+                </span>
+                <span class="tag">
+                  Responsive Design
+                </span>
+                <span class="tag">
+                  Nunjucks
+                </span>
+                <span class="tag">
+                  Bootstrap
+                </span>
+                <span class="tag">
+                  Express.js
+                </span>
+                <span class="tag">
+                  Passport.js
+                </span>
+                <span class="tag">
+                  Google Cloud Platform (GCL)
+                </span>
+                <span class="tag">
+                  Google App Engine (GCL)
+                </span>
+                <span class="tag">
+                  Chart.js
+                </span>
+                <span class="tag">
+                  Bing Maps API
+                </span>
+                <span class="tag">
+                  JQuery
+                </span>
+                <span class="tag">
+                  DataTables.net
+                </span>
+                <span class="tag">
+                  Git
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- timeline -->
@@ -858,6 +969,100 @@
         </a>
       </div>
     </footer>
+    <!-- modals -->
+    <div>
+      <div id="skill-search-source-code" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <pre class="box prettyprint lang-js">
+
+  // Skill Search Logic--------
+  const searchInput = document.getElementById("search-skills");
+  const tags = document.querySelectorAll("#skill-container .tag");
+  const noResultsEl = document.getElementById("no-skill");
+  // Add onkeyup function on search input
+  searchInput.onkeyup = (e) => {
+    // Initialize RegExp with dynamic variable and case insensetive
+    const regex = new RegExp(`${searchInput.value}`, "i");
+    // Test each elementNode for regex match
+    tags.forEach((tag) =>
+      tag.innerText.match(regex) ? tag.classList.remove("is-hidden") : tag.classList.add("is-hidden")
+    );
+    // If no matches return, show conditional element
+    document.querySelectorAll("#skill-container .tag.is-hidden").length ===
+    document.querySelectorAll("#skill-container .tag").length
+      ? noResultsEl.classList.remove("is-hidden")
+      : noResultsEl.classList.add("is-hidden");
+  };
+          </pre>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+      <div id="github-source-code" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <pre class="box prettyprint lang-js">
+
+  // Github API Logic--------
+  // This website's ID (sames as it's repo ID)
+  const websiteId = 255731256;
+  // Fetch repos through API using async/await
+  const repos = await fetch("https://api.github.com/users/aaronm-git/repos").then((res) => res.json());
+  // Build links inside panel-links-container
+  const panelLinksContainer = document.getElementById("panel-links-container");
+  // Sort repos by recently updated
+  repos.sort((a, b) => (new Date(a.updated_at) < new Date(b.updated_at) ? 1 : -1));
+  // Iterate each repo to build it's link element
+  repos.forEach((repo) => {
+    // Get prebuilt panel link HTML from function return
+    const panelLinkHTML = stringToHTML(getPanelLinkHTML());
+    panelLinkHTML.setAttribute("href", repo.html_url);
+    let iClassList = panelLinkHTML.querySelector("i").classList;
+    repo.fork ? iClassList.add("fas", "fa-code-branch") : iClassList.add("fas", "fa-book");
+    panelLinkHTML.querySelector("span.repoName").innerText = repo.name;
+    if (websiteId === repo.id) {
+      const tagHTML = stringToHTML(`&lt;div class="tags" style="margin-left: 1rem;">&lt;span&gt;this Website&lt;/span&gt;&lt;/div&gt;`);
+      panelLinkHTML.append(tagHTML);
+    }
+    // Add link element to DOM
+    panelLinksContainer.append(panelLinkHTML);
+  });
+      </pre
+          >
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+      <div id="rp-image" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <p class="image" style="max-height: 92%; overflow: scroll; margin-bottom: 1rem;">
+            <img src="./public/images/ripple-platform-screenshot.png" alt="Ripple Platform image" />
+          </p>
+          <a href="https://app.ripple-platform.com" class="button is-light is-outlined is-pulled-right is-rounded">
+            <span class="icon">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+            <span>Tour</span>
+          </a>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+      <div id="todo-image" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <p class="image" style="max-height: 92%; overflow: scroll; margin-bottom: 1rem;">
+            <img src="./public/images/react-todo-app-screenshot.png" alt="Todo app image" />
+          </p>
+          <a href="https://app.ripple-platform.com" class="button is-light is-outlined is-pulled-right is-rounded">
+            <span class="icon">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+            <span>Tour</span>
+          </a>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+    </div>
     <!-- dependencies -->
     <div>
       <!-- stylesheets -->
