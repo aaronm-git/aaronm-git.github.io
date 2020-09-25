@@ -34,22 +34,22 @@
 
 .section-title {
   font-size: 3rem;
-  font-weight: lighter;
+  font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
   text-align: center;
-  color: grey;
 }
 
 .hero.backdrop::before {
-  background-image: url("../images/cover.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top 50% right 100%;
   content: "";
+  background: url("../images/cover.png") left center no-repeat;
+  background-size: cover;
   height: 100%;
   width: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
 }
 
 .hero:first-of-type .title {
@@ -62,7 +62,8 @@
   bottom: 5%;
   padding: 1rem 22px;
   border-radius: 100px;
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0px 0 1px rgba(10, 10, 10, 0.02);
   transition: 0.3s;
 }
 
@@ -109,7 +110,12 @@
 
 .tile .image::before {
   content: "";
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 1),rgba(255, 255, 255, .8), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0)
+  );
   position: absolute;
   height: 100px;
   right: 0;
