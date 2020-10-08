@@ -28,6 +28,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-timeline@3.0.4/dist/css/bulma-timeline.min.css"> -->
     <link rel="stylesheet" href="./public/css/bulma.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
@@ -70,11 +72,11 @@
           <a class="navbar-item" href="#contact"
             ><span class="has-text-primary">#</span>&nbsp;Contact</a
           >
-          <a
+          <!-- <a
             class="navbar-item has-text-primary"
             href="./public/images/Aaron Molina - Web Developer Resume.pdf"
             ><i class="fas fa-download"></i>&nbsp;Download Resume</a
-          >
+          > -->
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
@@ -122,19 +124,19 @@
               src="/public/images/aaron-molina.jpeg"
             />
           </figure>
-          <p class="title is-size-1 is-uppercase">Hi, I'm Aaron</p>
+          <p class="title is-size-1 is-uppercase">Aaron Molina</p>
           <p class="subtitle is-uppercase is-size-2">
-            A Full-Stack Web Developer
+            Full-Stack Web Developer
           </p>
           <div class="buttons" style="justify-content: center">
-            <a
+            <!-- <a
               href="./public/images/Aaron Molina - Web Developer Resume.pdf"
               target="_blank"
               class="button is-medium is-primary is-inverted"
             >
               <span class="icon"><i class="fas fa-download"></i></span>
               <span>Download Resume</span>
-            </a>
+            </a> -->
             <a href="#contact" class="button is-medium is-white">
               <span class="icon"><i class="fas fa-envelope"></i></span>
               <span>Contact</span>
@@ -144,13 +146,16 @@
       </div>
     </section>
     <!-- main content -->
-    <div class="container is-fullhd">
-      <section id="about" class="section is-medium is-shadowless">
+    <div class="container">
+      <section id="about" class="section is-medium">
         <!-- about -->
         <h1 class="section-title">About</h1>
-        <div class="columns is-reversed-mobile-only">
-          <div class="column is-justified-start-desktop is-flex">
-            <p style="align-self: center;">
+        <div class="columns">
+          <div class="column is-half has-text-centered">
+            <img src="./public/images/prof.svg" />
+          </div>
+          <div class="column">
+            <p style="align-self: center">
               Since beginning my journey as a freelance developer nearly 8 years
               ago, I've done work for small and large companies, consulted for
               startups, and collaborated with talented teams to create digital
@@ -159,19 +164,16 @@
               my developer skills one problem at a time.
             </p>
           </div>
-          <div class="column is-two-fifths is-justified-end-desktop">
-            <img src="./public/images/prof.svg" />
-          </div>
         </div>
       </section>
       <!-- skills -->
       <section id="skills" class="section is-medium">
         <h2 class="section-title">Skills</h2>
-        <div class="columns is-column-mobile-only">
-          <div class="column is-two-fifths is-justified-start-desktop">
+        <div class="columns">
+          <div class="column is-half has-text-centered">
             <img src="./public/images/webdev.svg" />
           </div>
-          <div class="column is-justified-start-desktop is-relative">
+          <div class="column">
             <!-- search -->
             <div class="field">
               <p class="control has-icons-left">
@@ -420,10 +422,13 @@
           </div>
         </div>
       </section>
-      <section id="projects" class="section is-medium is-shadowless">
+      <section id="projects" class="section is-medium">
         <!-- projects -->
         <h1 class="section-title">Projects</h1>
-        <div class="columns is-reversed-mobile-only">
+        <div class="columns">
+          <div class="column is-half has-text-centered">
+            <img src="./public/images/git.svg" />
+          </div>
           <div class="column is-justified-start-desktop">
             <article class="panel is-dark has-background-white">
               <p class="panel-heading">
@@ -450,13 +455,10 @@
               </div>
             </article>
           </div>
-          <div class="column is-two-fifths is-justified-end-desktop">
-            <img src="./public/images/git.svg" />
-          </div>
         </div>
-        <div class="tile is-ancestor">
+        <div class="tile">
           <div class="tile is-4 is-vertical is-parent">
-            <div class="tile is-child box">
+            <div class="box">
               <p class="title">YuGiOh! Card Database</p>
               <p>
                 A Reactjs App utilizing Google's Firebase Cloud Firestore (NoSQL
@@ -481,7 +483,7 @@
                   </button>
                   <a
                     href="https://aaronm-git.github.io/yugiohdb-react-firebase-app"
-                    class="button is-link is-rounded"
+                    class="button is-link "
                   >
                     <span class="icon">
                       <i class="fas fa-external-link-alt"></i>
@@ -504,7 +506,7 @@
                 <span class="tag"> Bootstrap </span>
               </div>
             </div>
-            <div class="tile is-child box">
+            <div class="box">
               <p class="title">Other Projects</p>
               <p>
                 A list of other websites and projects which I contributed on.
@@ -536,7 +538,7 @@
             </div>
           </div>
           <div class="tile is-parent">
-            <div class="tile is-child box">
+            <div class="box">
               <p class="title">Ripple Platform</p>
               <p>
                 Pool Cleaning Service CRM Cloud Software. Ripple Platform is
@@ -565,7 +567,7 @@
                   </button>
                   <a
                     href="https://app.ripple-platform.com"
-                    class="button is-link is-rounded"
+                    class="button is-link "
                   >
                     <span class="icon">
                       <i class="fas fa-external-link-alt"></i>
@@ -599,7 +601,7 @@
       </section>
       <!-- timeline -->
       <section id="experience" class="section is-medium">
-          <h2 class="section-title is-relative">Experience</h2>
+        <h2 class="section-title is-relative">Experience</h2>
         <div class="container">
           <!-- desktop -->
           <div class="timeline is-centered">
@@ -757,82 +759,12 @@
       </section>
     </div>
     <!-- contact -->
-    <section id="contact" class="hero is-dark is-bold">
+    <section id="contact" class="hero is-primary is-bold">
       <div class="hero-body">
         <div class="container">
           <h2 class="section-title">Contact</h2>
-          <div class="columns is-variable is-5">
-            <div class="column">
-              <div class="box">
-                <h2 class="subtitle has-text-grey">
-                  <span class="icon">
-                    <i class="fas fa-address-card"></i>
-                  </span>
-                  <!-- My Contact Info -->
-                </h2>
-                <img
-                  src="./public/images/contact.svg"
-                  style="
-                    max-width: 280px;
-                    width: 100%;
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    position: relative;
-                    top: -2rem;
-                    margin-bottom: -1.5rem;
-                  "
-                />
-                <table class="table">
-                  <tbody>
-                    <tr>
-                      <td>
-                        <i class="fas fa-map-pin has-text-primary"></i> Miami,
-                        Florida
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="tel:3054149289" class="has-text-primary"
-                          ><i class="fas fa-phone-alt"></i> 305-414-9289</a
-                        >
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a
-                          href="mailto:hire@aaronmolina.me"
-                          class="has-text-primary"
-                          ><i class="fas fa-envelope"></i>
-                          hire@aaronmolina.me</a
-                        >
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a
-                          href="https://twitter.com/aaroncodes09"
-                          class="has-text-primary"
-                          ><i class="fab fa-twitter"></i> @aaroncodes09</a
-                        >
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <p>
-                  Normally Available <br />
-                  <strong>Monday - Friday</strong>, from 9 am to 5 pm, EST
-                </p>
-              </div>
-            </div>
-            <div class="column">
-              <div class="box">
-                <h2 class="subtitle has-text-grey">
-                  <span class="icon">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                  <!-- Send Me A Message -->
-                </h2>
+          <div class="columns is-centered">
+            <div class="box column is-two-fifths">
                 <form action="https://formspree.io/xaydzyqa" method="POST">
                   <div class="field">
                     <label class="label">Name</label>
@@ -905,8 +837,7 @@
                     />
                   </a>
                 </form>
-              </div>
-            </div>
+              </div>  
           </div>
         </div>
       </div>
@@ -918,11 +849,11 @@
       </a>
     </div>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer has-background-dark">
       <div class="content has-text-centered">
-        <p>
-          <strong>Copyright <i class="far fa-copyright"></i> 2020</strong
-          > - Aaron Molina
+        <p class="has-text-white-ter">
+          <strong class="has-text-white-ter">Copyright <i class="far fa-copyright"></i> 2020</strong> -
+          Aaron Molina
         </p>
         <a href="https://bulma.io">
           <img
@@ -1011,7 +942,7 @@
           </p>
           <a
             href="https://aaronm-git.github.io/yugiohdb-react-firebase-app"
-            class="button is-light is-outlined is-pulled-right is-rounded"
+            class="button is-light is-outlined is-pulled-right "
           >
             <span class="icon">
               <i class="fas fa-external-link-alt"></i>
@@ -1035,7 +966,7 @@
           </p>
           <a
             href="https://app.ripple-platform.com"
-            class="button is-light is-outlined is-pulled-right is-rounded"
+            class="button is-light is-outlined is-pulled-right "
           >
             <span class="icon">
               <i class="fas fa-external-link-alt"></i>

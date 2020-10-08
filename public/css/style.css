@@ -16,27 +16,11 @@
   margin: 0 0 0 auto;
 }
 
-@media only screen and (max-width: 768px) {
-  .is-column-mobile-only {
-    display: flex;
-    flex-direction: column;
-  }
-  .is-reversed-mobile-only {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .is-justified-start-desktop img,
-  .is-justified-end-desktop img {
-    display: block;
-    margin: 0 auto;
-  }
-}
-
 .section-title {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   text-align: center;
 }
 
@@ -49,7 +33,7 @@
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
-  opacity: 0.25;
+  opacity: 0.18;
   top: 0;
   left: 0;
 }
