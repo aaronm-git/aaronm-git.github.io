@@ -111,7 +111,8 @@
       </div>
     </nav>
     <!-- hero -->
-    <section id="top" class="hero backdrop is-primary is-bold is-fullheight">
+    <section id="top" class="hero is-primary is-bold is-fullheight">
+      <div class="backdrop"></div>
       <div class="hero-body">
         <div class="container has-text-centered">
           <figure
@@ -456,9 +457,9 @@
             </article>
           </div>
         </div>
-        <div class="tile">
+        <div class="tile is-ancestor">
           <div class="tile is-4 is-vertical is-parent">
-            <div class="box">
+            <div class="tile is-child box">
               <p class="title">YuGiOh! Card Database</p>
               <p>
                 A Reactjs App utilizing Google's Firebase Cloud Firestore (NoSQL
@@ -483,7 +484,7 @@
                   </button>
                   <a
                     href="https://aaronm-git.github.io/yugiohdb-react-firebase-app"
-                    class="button is-link "
+                    class="button is-link"
                   >
                     <span class="icon">
                       <i class="fas fa-external-link-alt"></i>
@@ -506,7 +507,7 @@
                 <span class="tag"> Bootstrap </span>
               </div>
             </div>
-            <div class="box">
+            <div class="tile is-child box">
               <p class="title">Other Projects</p>
               <p>
                 A list of other websites and projects which I contributed on.
@@ -538,7 +539,7 @@
             </div>
           </div>
           <div class="tile is-parent">
-            <div class="box">
+            <div class="tile is-child box">
               <p class="title">Ripple Platform</p>
               <p>
                 Pool Cleaning Service CRM Cloud Software. Ripple Platform is
@@ -567,7 +568,7 @@
                   </button>
                   <a
                     href="https://app.ripple-platform.com"
-                    class="button is-link "
+                    class="button is-link"
                   >
                     <span class="icon">
                       <i class="fas fa-external-link-alt"></i>
@@ -765,79 +766,79 @@
           <h2 class="section-title">Contact</h2>
           <div class="columns is-centered">
             <div class="box column is-two-fifths">
-                <form action="https://formspree.io/xaydzyqa" method="POST">
-                  <div class="field">
-                    <label class="label">Name</label>
-                    <div class="control">
-                      <input
-                        class="input"
-                        type="text"
-                        placeholder="Your first name and last name"
-                        name="name"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control has-icons-left has-icons-right">
-                      <input
-                        class="input"
-                        type="email"
-                        placeholder="Your email"
-                        name="_replyto"
-                        required
-                      />
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="field">
-                    <label class="label">Message</label>
-                    <div class="control">
-                      <textarea
-                        class="textarea"
-                        placeholder="Your message"
-                        name="message"
-                        required
-                      ></textarea>
-                    </div>
-                  </div>
-                  <input
-                    class="input"
-                    type="hidden"
-                    value="aaronm-git.github.io: Contact Form Submission"
-                    name="_subject"
-                  />
-                  <div class="field is-grouped">
-                    <div class="control">
-                      <button class="button is-primary">
-                        <span class="icon">
-                          <i class="fa fa-paper-plane"></i>
-                        </span>
-                        <span>Send</span>
-                      </button>
-                    </div>
-                  </div>
-                  <a
-                    href="https://formspree.io"
-                    class="is-block has-text-right has-text-grey"
-                  >
-                    <small>Powered By</small>
-                    <img
-                      src="./public/images/formspree-logo.png"
-                      alt="powered by formspree.io"
-                      style="
-                        height: 22px;
-                        margin-left: 6px;
-                        position: relative;
-                        top: 6px;
-                      "
+              <form action="https://formspree.io/xaydzyqa" method="POST">
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Your first name and last name"
+                      name="name"
+                      required
                     />
-                  </a>
-                </form>
-              </div>  
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input
+                      class="input"
+                      type="email"
+                      placeholder="Your email"
+                      name="_replyto"
+                      required
+                    />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea
+                      class="textarea"
+                      placeholder="Your message"
+                      name="message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <input
+                  class="input"
+                  type="hidden"
+                  value="aaronm-git.github.io: Contact Form Submission"
+                  name="_subject"
+                />
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button is-primary">
+                      <span class="icon">
+                        <i class="fa fa-paper-plane"></i>
+                      </span>
+                      <span>Send</span>
+                    </button>
+                  </div>
+                </div>
+                <a
+                  href="https://formspree.io"
+                  class="is-block has-text-right has-text-grey"
+                >
+                  <small>Powered By</small>
+                  <img
+                    src="./public/images/formspree-logo.png"
+                    alt="powered by formspree.io"
+                    style="
+                      height: 22px;
+                      margin-left: 6px;
+                      position: relative;
+                      top: 6px;
+                    "
+                  />
+                </a>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -852,8 +853,10 @@
     <footer class="footer has-background-dark">
       <div class="content has-text-centered">
         <p class="has-text-white-ter">
-          <strong class="has-text-white-ter">Copyright <i class="far fa-copyright"></i> 2020</strong> -
-          Aaron Molina
+          <strong class="has-text-white-ter"
+            >Copyright <i class="far fa-copyright"></i> 2020</strong
+          >
+          - Aaron Molina
         </p>
         <a href="https://bulma.io">
           <img
@@ -942,7 +945,7 @@
           </p>
           <a
             href="https://aaronm-git.github.io/yugiohdb-react-firebase-app"
-            class="button is-light is-outlined is-pulled-right "
+            class="button is-light is-outlined is-pulled-right"
           >
             <span class="icon">
               <i class="fas fa-external-link-alt"></i>
@@ -966,7 +969,7 @@
           </p>
           <a
             href="https://app.ripple-platform.com"
-            class="button is-light is-outlined is-pulled-right "
+            class="button is-light is-outlined is-pulled-right"
           >
             <span class="icon">
               <i class="fas fa-external-link-alt"></i>
