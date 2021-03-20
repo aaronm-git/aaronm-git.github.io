@@ -110,7 +110,8 @@
         </div>
       </div>
     </nav>
-    <section id="top" class="hero is-primary is-bold is-fullheight">
+    <!-- ANCHOR intro -->
+    <section id="intro" class="hero is-primary is-bold is-fullheight">
       <div class="hero-body">
         <div class="container has-text-centered">
           <figure
@@ -123,10 +124,8 @@
               src="/public/images/aaron-molina.jpeg"
             />
           </figure>
-          <p class="title is-size-1 is-uppercase">Aaron Molina</p>
-          <p class="subtitle is-uppercase is-size-2">
-            Full-Stack Web Developer
-          </p>
+          <h1 class="title is-size-1">Aaron Molina</h1>
+          <h2 class="subtitle"><span id="typed"></span></h2>
           <div class="buttons" style="justify-content: center">
             <!-- <a
               href="./public/images/Aaron Molina - Web Developer Resume.pdf"
@@ -145,10 +144,10 @@
       </div>
     </section>
     <!-- SECTION main content -->
-    <div class="container">
+    <div id="main" class="container">
       <!-- ANCHOR about -->
       <section id="about" class="section is-medium">
-      <h1 class="title has-text-centered">About</h1>
+        <h1 class="title has-text-centered has-text-weight-light is-uppercase">About</h1>
         <div class="columns is-vcentered">
           <div class="column has-text-centered">
             <img src="./public/images/prof.svg" />
@@ -167,9 +166,9 @@
       </section>
       <!-- ANCHOR skills -->
       <section id="skills" class="section is-medium">
-        <h2 class="title has-text-centered">Skills</h2>
+        <h2 class="title has-text-centered has-text-weight-light is-uppercase">Skills</h2>
         <div class="columns is-vcentered">
-          <div class="column  has-text-centered">
+          <div class="column has-text-centered">
             <img src="./public/images/webdev.svg" />
           </div>
           <div class="column">
@@ -424,9 +423,9 @@
       <!-- ANCHOR projects -->
       <section id="projects" class="section is-medium">
         <!-- projects -->
-        <h1 class="title has-text-centered">Projects</h1>
+        <h1 class="title has-text-centered has-text-weight-light is-uppercase">Projects</h1>
         <div class="columns is-vcentered">
-          <div class="column  has-text-centered">
+          <div class="column has-text-centered">
             <img src="./public/images/git.svg" />
           </div>
           <div class="column">
@@ -507,7 +506,7 @@
               </div>
             </div>
             <div class="tile is-child box">
-              <p class="title has-text-centered">Other Projects</p>
+              <p class="title">Other Projects</p>
               <p>
                 A list of other websites and projects which I contributed on.
               </p>
@@ -601,7 +600,7 @@
       </section>
       <!-- ANCHOR timeline -->
       <section id="experience" class="section is-medium">
-        <h2 class="title has-text-centered">Experience</h2>
+        <h2 class="title has-text-centered has-text-weight-light is-uppercase">Experience</h2>
         <div class="container">
           <!-- desktop -->
           <div class="timeline is-centered">
@@ -763,7 +762,7 @@
     <section id="contact" class="hero is-primary is-bold">
       <div class="hero-body">
         <div class="container">
-          <h2 class="title has-text-centered">Contact</h2>
+          <h2 class="title has-text-centered has-text-weight-light is-uppercase">Contact</h2>
           <div class="columns is-vcentered is-centered">
             <div class="box column is-two-fifths">
               <form action="https://formspree.io/xaydzyqa" method="POST">
@@ -843,9 +842,9 @@
         </div>
       </div>
     </section>
-    <!-- to top button -->
+    <!-- ANCHOR scroll to top button -->
     <div class="top-btn-container is-hidden has-shadow" id="top-button">
-      <a href="#top" class="top-button has-background-primary has-text-white">
+      <a href="#intro" class="top-button has-background-primary has-text-white">
         <i class="fas fa-arrow-up"></i>
       </a>
     </div>
@@ -985,6 +984,7 @@
       <link rel="stylesheet" href="./public/css/google-code-prettier.min.css" />
       <!-- ANCHOR js scripts -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
       <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
       <script src="./public/javascript/scripts.js"></script>
     </div>

@@ -1,3 +1,11 @@
+{
+  var typed = new Typed('#typed', {
+    strings: ["Full-Stack Web Developer.", "Experienced Web Designer."],
+    typeSpeed: 75,
+    loop: true,
+    backDelay: 2000
+  });
+}
 // nav-burger logic
 {
   document.addEventListener("DOMContentLoaded", () => {
