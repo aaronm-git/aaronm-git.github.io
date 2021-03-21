@@ -164,11 +164,11 @@ function expandRepos() {
   if (button.classList.contains("active")) {
     button.innerHTML = "<i class='fas fa-caret-down'></i>";
     button.classList.remove("active");
-    container.style.maxHeight = "164px";
+    container.style.height = "164px";
   } else {
     button.innerHTML = "<i class='fas fa-caret-up'></i>";
     button.classList.add("active");
-    container.style.maxHeight = "9999px";
+    container.style.height = "auto";
   }
   // hideRepos();
 }
