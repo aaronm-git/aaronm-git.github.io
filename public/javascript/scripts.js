@@ -1,9 +1,9 @@
 {
-  var typed = new Typed('#typed', {
+  var typed = new Typed("#typed", {
     strings: ["Full-Stack Web Developer.", "Experienced Web Designer."],
     typeSpeed: 75,
     loop: true,
-    backDelay: 2000
+    backDelay: 2000,
   });
 }
 // nav-burger logic
@@ -157,3 +157,36 @@ function getPanelLinkHTML() {
       <span class="repoName"></span>
     </a>`;
 }
+
+function expandRepos() {
+  const button = document.getElementById("expandRepos");
+  const container = document.getElementById("panel-links-container");
+  if (button.classList.contains("active")) {
+    button.innerHTML = "<i class='fas fa-caret-down'></i>";
+    button.classList.remove("active");
+    container.style.maxHeight = "164px";
+  } else {
+    button.innerHTML = "<i class='fas fa-caret-up'></i>";
+    button.classList.add("active");
+    container.style.maxHeight = "9999px";
+  }
+  // hideRepos();
+}
+
+// function hideRepos(){
+//   const button = document.getElementById("expandRepos");
+//   const container = document
+//   .getElementById("expandRepos")
+//   .closest("#panel-links-container");
+//   const repos = container.children;
+//   for (let i = 0; i < repos.length - 1; i++) {
+//     const repo = repos[i];
+//     if (i > 4 && !button.classList.contains("active")) {
+//       repo.classList.add("is-hidden");
+//     } else {
+//       repo.classList.remove("is-hidden");
+//     }
+//   }
+// }
+
+// hideRepos();
