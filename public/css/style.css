@@ -67,3 +67,10 @@
   -o-transition: max-height 1s; 
   transition: max-height 1s;   */
 }
+
+
+@media(min-width: 768px) {
+  .reverse-columns {
+    flex-flow: row-reverse;
+  }
+}

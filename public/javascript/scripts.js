@@ -1,3 +1,5 @@
+document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+
 {
   var typed = new Typed("#typed", {
     strings: ["Full-Stack Web Developer.", "Experienced Web Designer."],
@@ -114,6 +116,7 @@
   const searchInput = document.getElementById("search-skills");
   const tags = document.querySelectorAll("#skill-container .tag");
   const noResultsEl = document.getElementById("no-skill");
+  const container = document.getElementById("skill-container");
   // Add onkeyup function on search input
   searchInput.onkeyup = (e) => {
     // Initialize RegExp with dynamic variable and case insensetive
@@ -126,9 +129,10 @@
     );
     // If no matches return, show conditional element
     document.querySelectorAll("#skill-container .tag.is-hidden").length ===
-    document.querySelectorAll("#skill-container .tag").length
-      ? noResultsEl.classList.remove("is-hidden")
-      : noResultsEl.classList.add("is-hidden");
+      document.querySelectorAll("#skill-container .tag").length
+      ? (noResultsEl.classList.remove("is-hidden"),
+        container.classList.add("is-hidden"))
+      : (noResultsEl.classList.add("is-hidden"), container.classList.remove("is-hidden"));
   };
 }
 
