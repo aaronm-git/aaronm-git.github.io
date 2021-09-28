@@ -1,85 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aaron Molina | Full-Stack Web Developer</title>
-  <!-- favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./public/images/favicon_io/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicon_io/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./public/images/favicon_io/favicon-16x16.png" />
-  <link rel="manifest" href="./public/images/favicon_io/site.webmanifest" />
-  <!-- stylesheets -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaron Molina | Full-Stack Web Developer</title>
+    <meta
+      name="google-site-verification"
+      content="70WVDE5Y6-EpnAIAcfDf27btEzYp_Y3aD0B5tOctoQg"
+    />
+    <!-- favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./public/images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./public/images/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./public/images/favicon_io/site.webmanifest" />
+    <!-- stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-timeline@3.0.4/dist/css/bulma-timeline.min.css"> -->
-  <link rel="stylesheet" href="./public/css/bulma.css" />
-  <link rel="stylesheet" href="./public/css/style.css" />
-</head>
+    <link rel="stylesheet" href="./public/css/bulma.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
 
-<body>
-  <!-- ANCHOR navbar -->
-  <nav class="navbar is-fixed-top shadow">
-    <div class="navbar-brand">
-      <a class="navbar-item has-text-primary has-text-weight-bold" href="#intro">
-        <span class="is-uppercase">Aaron Molina</span>
-      </a>
-      <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div id="navMenu" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="#about"><span class="has-text-primary">#</span>&nbsp;About</a>
-        <a class="navbar-item" href="#skills"><span class="has-text-primary">#</span>&nbsp;Skills</a>
-        <a class="navbar-item" href="#projects"><span class="has-text-primary">#</span>&nbsp;Projects</a>
-        <a class="navbar-item" href="#experience"><span class="has-text-primary">#</span>&nbsp;Experience</a>
-        <a class="navbar-item" href="#contact"><span class="has-text-primary">#</span>&nbsp;Contact</a>
-        <!-- <a
+  <body>
+    <!-- ANCHOR navbar -->
+    <nav class="navbar is-fixed-top shadow">
+      <div class="navbar-brand">
+        <a
+          class="navbar-item has-text-primary has-text-weight-bold"
+          href="#intro"
+        >
+          <span class="is-uppercase">Aaron Molina</span>
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          data-target="navMenu"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#about"
+            ><span class="has-text-primary">#</span>&nbsp;About</a
+          >
+          <a class="navbar-item" href="#skills"
+            ><span class="has-text-primary">#</span>&nbsp;Skills</a
+          >
+          <a class="navbar-item" href="#projects"
+            ><span class="has-text-primary">#</span>&nbsp;Projects</a
+          >
+          <a class="navbar-item" href="#experience"
+            ><span class="has-text-primary">#</span>&nbsp;Experience</a
+          >
+          <a class="navbar-item" href="#contact"
+            ><span class="has-text-primary">#</span>&nbsp;Contact</a
+          >
+          <!-- <a
             class="navbar-item has-text-primary"
             href="./public/images/Aaron Molina - Web Developer Resume.pdf"
             ><i class="fas fa-download"></i>&nbsp;Download Resume</a
           > -->
-      </div>
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-white has-text-twitter" href="https://twitter.com/aaroncodes09" target="_blank">
-              <span class="icon">
-                <i class="fab fa-twitter"></i>
-              </span>
-            </a>
-            <a class="button is-white has-text-linkedin" href="https://www.linkedin.com/in/aaronmolinag/"
-              target="_blank">
-              <span class="icon">
-                <i class="fab fa-linkedin"></i>
-              </span>
-            </a>
-            <a class="button is-white has-text-github" href="https://github.com/aaronm-git" target="_blank">
-              <span class="icon">
-                <i class="fab fa-github"></i>
-              </span>
-            </a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a
+                class="button is-white has-text-twitter"
+                href="https://twitter.com/aaroncodes09"
+                target="_blank"
+              >
+                <span class="icon">
+                  <i class="fab fa-twitter"></i>
+                </span>
+              </a>
+              <a
+                class="button is-white has-text-linkedin"
+                href="https://www.linkedin.com/in/aaronmolinag/"
+                target="_blank"
+              >
+                <span class="icon">
+                  <i class="fab fa-linkedin"></i>
+                </span>
+              </a>
+              <a
+                class="button is-white has-text-github"
+                href="https://github.com/aaronm-git"
+                target="_blank"
+              >
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
-  <!-- ANCHOR intro -->
-  <section id="intro" class="hero is-primary is-bold is-fullheight">
-    <video src="/public/images/main.mp4" autoplay loop muted></video>
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <figure class="image is-200x200" style="margin-bottom: 1rem; margin-left: auto; margin-right: auto">
-          <img id="avatar" class="is-rounded" src="https://github.com/aaronm-git.png" />
-        </figure>
-        <h1 class="title is-size-1">Aaron Molina</h1>
-        <h2 class="subtitle"><span id="typed"></span></h2>
-        <div class="buttons" style="justify-content: center">
-          <!-- <a
+    </nav>
+    <!-- ANCHOR intro -->
+    <section id="intro" class="hero is-primary is-bold is-fullheight">
+      <video src="/public/images/main.mp4" autoplay loop muted></video>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <figure
+            class="image is-200x200"
+            style="margin-bottom: 1rem; margin-left: auto; margin-right: auto"
+          >
+            <img
+              id="avatar"
+              class="is-rounded"
+              src="https://github.com/aaronm-git.png"
+            />
+          </figure>
+          <h1 class="title is-size-1">Aaron Molina</h1>
+          <h2 class="subtitle"><span id="typed"></span></h2>
+          <div class="buttons" style="justify-content: center">
+            <!-- <a
               href="./public/images/Aaron Molina - Web Developer Resume.pdf"
               target="_blank"
               class="button is-medium is-primary is-inverted"
@@ -87,276 +144,323 @@
               <span class="icon"><i class="fas fa-download"></i></span>
               <span>Download Resume</span>
             </a> -->
-          <a href="#contact" class="button is-medium is-white">
-            <span class="icon"><i class="fas fa-envelope"></i></span>
-            <span>Contact</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- SECTION main content -->
-  <div id="main" class="container">
-    <!-- ANCHOR about -->
-    <section id="about" class="section is-medium">
-      <h1 class="title has-text-centered has-text-weight-light is-uppercase">
-        About
-      </h1>
-      <div class="columns is-vcentered">
-        <div class="column has-text-centered">
-          <img src="./public/images/prof.svg" />
-        </div>
-        <div class="column">
-          <p>
-            Since beginning my journey as a freelance developer nearly 8 years
-            ago, I've done work for small and large companies, consulted for
-            startups, and collaborated with talented teams to create digital
-            products for both business and consumer use. I'm quietly
-            confident, naturally curious, and perpetually working on improving
-            my developer skills one problem at a time.
-          </p>
+            <a href="#contact" class="button is-medium is-white">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              <span>Contact</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
-    <!-- ANCHOR skills -->
-    <section id="skills" class="section is-medium">
-      <h2 class="title has-text-centered has-text-weight-light is-uppercase">
-        Skills
-      </h2>
-      <div class="columns is-vcentered reverse-columns">
-        <div class="column has-text-centered">
-          <img src="./public/images/webdev.svg" />
-        </div>
-        <div class="column">
-          <!-- search -->
-          <div class="field">
-            <p class="control has-icons-left">
-              <input id="search-skills" class="input is-primary" type="text" placeholder="Skill Search" />
-              <span class="icon is-small is-left">
-                <i class="fas fa-search"></i>
-              </span>
+    <!-- SECTION main content -->
+    <div id="main" class="container">
+      <!-- ANCHOR about -->
+      <section id="about" class="section is-medium">
+        <h1 class="title has-text-centered has-text-weight-light is-uppercase">
+          About
+        </h1>
+        <div class="columns is-vcentered">
+          <div class="column has-text-centered">
+            <img src="./public/images/prof.svg" />
+          </div>
+          <div class="column">
+            <p>
+              Since beginning my journey as a freelance developer nearly 8 years
+              ago, I've done work for small and large companies, consulted for
+              startups, and collaborated with talented teams to create digital
+              products for both business and consumer use. I'm quietly
+              confident, naturally curious, and perpetually working on improving
+              my developer skills one problem at a time.
             </p>
           </div>
-          <!-- skills container -->
-          <div id="skill-container" class="tags"
-            style="max-height: 200px; overflow-y: scroll; border: 1px lightgrey solid; padding: 1rem; border-radius: 4px;">
-            <span class="tag is-medium is-html">
-              <span class="icon">
-                <i class="fab fa-html5"></i>
-              </span>
-              <span class="has-text-weight-medium">HTML5</span>
-            </span>
-            <span class="tag is-medium is-info">
-              <span class="icon">
-                <i class="fab fa-css3"></i>
-              </span>
-              <span class="has-text-weight-medium">CSS3</span>
-            </span>
-            <span class="tag is-medium is-sass">
-              <span class="icon">
-                <i class="fab fa-sass"></i>
-              </span>
-              <span class="has-text-weight-medium">Sass</span>
-            </span>
-            <span class="tag is-medium is-warning">
-              <span class="icon">
-                <i class="fab fa-js"></i>
-              </span>
-              <span class="has-text-weight-medium">JavaScript</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">JQuery</span>
-            </span>
-            <span class="tag is-medium has-text-info">
-              <span class="icon">
-                <i class="fab fa-react"></i>
-              </span>
-              <span class="has-text-weight-medium">React</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">JSX</span>
-            </span>
-            <span class="tag is-medium is-dark">
-              <span class="icon">
-                <i class="fab fa-node-js"></i>
-              </span>
-              <span class="has-text-weight-medium">Node.js</span>
-            </span>
-            <span class="tag is-medium is-mongodb">
-              <span class="icon">
-                <i class="fas fa-database"></i>
-              </span>
-              <span class="has-text-weight-medium">MongoDB</span>
-            </span>
-            <span class="tag is-medium is-danger">
-              <span class="icon">
-                <i class="fas fa-mobile-alt"></i>
-              </span>
-              <span class="has-text-weight-medium">Responsive Design</span>
-            </span>
-            <span class="tag is-medium is-bootstrap">
-              <span class="icon">
-                <i class="fab fa-bootstrap"></i>
-              </span>
-              <span class="has-text-weight-medium">Bootstrap</span>
-            </span>
-            <span class="tag is-medium is-link">
-              <span class="icon">
-                <i class="fab fa-wordpress"></i>
-              </span>
-              <span class="has-text-weight-medium">WordPress</span>
-            </span>
-            <span class="tag is-medium is-git">
-              <span class="icon">
-                <i class="fab fa-git-alt"></i>
-              </span>
-              <span class="has-text-weight-medium">Git</span>
-            </span>
-            <span class="tag is-medium is-adobe">
-              <span class="icon">
-                <i class="fab fa-adobe"></i>
-              </span>
-              <span class="has-text-weight-medium">Adobe Creative Cloud</span>
-            </span>
-            <span class="tag is-medium is-adobe">
-              <span class="icon">
-                <i class="fab fa-adobe"></i>
-              </span>
-              <span class="has-text-weight-medium">Photoshop CC</span>
-            </span>
-            <span class="tag is-medium is-adobe">
-              <span class="icon">
-                <i class="fab fa-adobe"></i>
-              </span>
-              <span class="has-text-weight-medium">Dreamweaver CC</span>
-            </span>
-            <span class="tag is-medium is-adobe">
-              <span class="icon">
-                <i class="fab fa-adobe"></i>
-              </span>
-              <span class="has-text-weight-medium">Muse CC</span>
-            </span>
-            <span class="tag is-medium is-warning">
-              <span class="icon">
-                <i class="fab fa-aws"></i>
-              </span>
-              <span class="has-text-weight-medium">Amazon Web Services (AWS)</span>
-            </span>
-            <span class="tag is-medium is-warning">
-              <span class="icon">
-                <i class="fab fa-aws"></i>
-              </span>
-              <span class="has-text-weight-medium">Route53 (AWS)</span>
-            </span>
-            <span class="tag is-medium is-warning"><span class="icon">
-                <i class="fab fa-aws"></i>
-              </span>
-              <span class="has-text-weight-medium">EC2 (AWS)</span>
-            </span>
-            <span class="tag is-medium is-warning"><span class="icon">
-                <i class="fab fa-aws"></i>
-              </span>
-              <span class="has-text-weight-medium">Elastic Beanstalk (AWS)</span>
-            </span>
-            <span class="tag is-medium is-warning"><span class="icon">
-                <i class="fab fa-aws"></i>
-              </span>
-              <span class="has-text-weight-medium">S3 (AWS)</span>
-            </span>
-            <span class="tag is-medium is-light has-text-link">
-              <span class="icon">
-                <i class="fab fa-google"></i>
-              </span>
-              <span class="has-text-weight-medium">Google Cloud Platform (GCP)</span>
-            </span>
-            <span class="tag is-medium is-light has-text-link">
-              <span class="icon">
-                <i class="fab fa-google"></i>
-              </span>
-              <span class="has-text-weight-medium">Google App Engine (GCP)</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">Heroku</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">DNS</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">Domain Hosting Services</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">Single Page Application (SPA)</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">Bulma.io</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">ES5</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">ES6</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">Model View Controller (MVC)</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">NoSQL</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">Front-End Development</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">Back-End Development</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">Async/Await</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">ES6 Promises</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">ES6 Classes</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">Graphic Design</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">Flexbox</span>
-            </span>
-            <span class="tag is-medium">
-              <span class="has-text-weight-medium">Search Engine Optimization (SEO)</span>
-            </span>
+        </div>
+      </section>
+      <!-- ANCHOR skills -->
+      <section id="skills" class="section is-medium">
+        <h2 class="title has-text-centered has-text-weight-light is-uppercase">
+          Skills
+        </h2>
+        <div class="columns is-vcentered reverse-columns">
+          <div class="column has-text-centered">
+            <img src="./public/images/webdev.svg" />
           </div>
-          <p id="no-skill" class="is-hidden has-text-centered has-background-light" style="
+          <div class="column">
+            <!-- search -->
+            <div class="field">
+              <p class="control has-icons-left">
+                <input
+                  id="search-skills"
+                  class="input is-primary"
+                  type="text"
+                  placeholder="Skill Search"
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-search"></i>
+                </span>
+              </p>
+            </div>
+            <!-- skills container -->
+            <div
+              id="skill-container"
+              class="tags"
+              style="
+                max-height: 200px;
+                overflow-y: scroll;
+                border: 1px lightgrey solid;
+                padding: 1rem;
+                border-radius: 4px;
+              "
+            >
+              <span class="tag is-medium is-html">
+                <span class="icon">
+                  <i class="fab fa-html5"></i>
+                </span>
+                <span class="has-text-weight-medium">HTML5</span>
+              </span>
+              <span class="tag is-medium is-info">
+                <span class="icon">
+                  <i class="fab fa-css3"></i>
+                </span>
+                <span class="has-text-weight-medium">CSS3</span>
+              </span>
+              <span class="tag is-medium is-sass">
+                <span class="icon">
+                  <i class="fab fa-sass"></i>
+                </span>
+                <span class="has-text-weight-medium">Sass</span>
+              </span>
+              <span class="tag is-medium is-warning">
+                <span class="icon">
+                  <i class="fab fa-js"></i>
+                </span>
+                <span class="has-text-weight-medium">JavaScript</span>
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium">JQuery</span>
+              </span>
+              <span class="tag is-medium has-text-info">
+                <span class="icon">
+                  <i class="fab fa-react"></i>
+                </span>
+                <span class="has-text-weight-medium">React</span>
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium">JSX</span>
+              </span>
+              <span class="tag is-medium is-dark">
+                <span class="icon">
+                  <i class="fab fa-node-js"></i>
+                </span>
+                <span class="has-text-weight-medium">Node.js</span>
+              </span>
+              <span class="tag is-medium is-mongodb">
+                <span class="icon">
+                  <i class="fas fa-database"></i>
+                </span>
+                <span class="has-text-weight-medium">MongoDB</span>
+              </span>
+              <span class="tag is-medium is-danger">
+                <span class="icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </span>
+                <span class="has-text-weight-medium">Responsive Design</span>
+              </span>
+              <span class="tag is-medium is-bootstrap">
+                <span class="icon">
+                  <i class="fab fa-bootstrap"></i>
+                </span>
+                <span class="has-text-weight-medium">Bootstrap</span>
+              </span>
+              <span class="tag is-medium is-link">
+                <span class="icon">
+                  <i class="fab fa-wordpress"></i>
+                </span>
+                <span class="has-text-weight-medium">WordPress</span>
+              </span>
+              <span class="tag is-medium is-git">
+                <span class="icon">
+                  <i class="fab fa-git-alt"></i>
+                </span>
+                <span class="has-text-weight-medium">Git</span>
+              </span>
+              <span class="tag is-medium is-adobe">
+                <span class="icon">
+                  <i class="fab fa-adobe"></i>
+                </span>
+                <span class="has-text-weight-medium">Adobe Creative Cloud</span>
+              </span>
+              <span class="tag is-medium is-adobe">
+                <span class="icon">
+                  <i class="fab fa-adobe"></i>
+                </span>
+                <span class="has-text-weight-medium">Photoshop CC</span>
+              </span>
+              <span class="tag is-medium is-adobe">
+                <span class="icon">
+                  <i class="fab fa-adobe"></i>
+                </span>
+                <span class="has-text-weight-medium">Dreamweaver CC</span>
+              </span>
+              <span class="tag is-medium is-adobe">
+                <span class="icon">
+                  <i class="fab fa-adobe"></i>
+                </span>
+                <span class="has-text-weight-medium">Muse CC</span>
+              </span>
+              <span class="tag is-medium is-warning">
+                <span class="icon">
+                  <i class="fab fa-aws"></i>
+                </span>
+                <span class="has-text-weight-medium"
+                  >Amazon Web Services (AWS)</span
+                >
+              </span>
+              <span class="tag is-medium is-warning">
+                <span class="icon">
+                  <i class="fab fa-aws"></i>
+                </span>
+                <span class="has-text-weight-medium">Route53 (AWS)</span>
+              </span>
+              <span class="tag is-medium is-warning"
+                ><span class="icon">
+                  <i class="fab fa-aws"></i>
+                </span>
+                <span class="has-text-weight-medium">EC2 (AWS)</span>
+              </span>
+              <span class="tag is-medium is-warning"
+                ><span class="icon">
+                  <i class="fab fa-aws"></i>
+                </span>
+                <span class="has-text-weight-medium"
+                  >Elastic Beanstalk (AWS)</span
+                >
+              </span>
+              <span class="tag is-medium is-warning"
+                ><span class="icon">
+                  <i class="fab fa-aws"></i>
+                </span>
+                <span class="has-text-weight-medium">S3 (AWS)</span>
+              </span>
+              <span class="tag is-medium is-light has-text-link">
+                <span class="icon">
+                  <i class="fab fa-google"></i>
+                </span>
+                <span class="has-text-weight-medium"
+                  >Google Cloud Platform (GCP)</span
+                >
+              </span>
+              <span class="tag is-medium is-light has-text-link">
+                <span class="icon">
+                  <i class="fab fa-google"></i>
+                </span>
+                <span class="has-text-weight-medium"
+                  >Google App Engine (GCP)</span
+                >
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium">Heroku</span>
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium">DNS</span>
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium"
+                  >Domain Hosting Services</span
+                >
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium"
+                  >Single Page Application (SPA)</span
+                >
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium">Bulma.io</span>
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium">ES5</span>
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium">ES6</span>
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium"
+                  >Model View Controller (MVC)</span
+                >
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium">NoSQL</span>
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium"
+                  >Front-End Development</span
+                >
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium">Back-End Development</span>
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium">Async/Await</span>
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium">ES6 Promises</span>
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium">ES6 Classes</span>
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium">Graphic Design</span>
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium">Flexbox</span>
+              </span>
+              <span class="tag is-medium">
+                <span class="has-text-weight-medium"
+                  >Search Engine Optimization (SEO)</span
+                >
+              </span>
+            </div>
+            <p
+              id="no-skill"
+              class="is-hidden has-text-centered has-background-light"
+              style="
                 padding: 0.75rem;
                 border-radius: 4px;
-                margin-bottom: .75rem;
-              ">
-            <i class="fas fa-poo"></i>&nbsp; I don't know that yet.<br /><strong>But I can learn it!</strong>
-          </p>
-          <a class="button" data-target-modal="skill-search-source-code">Source Code</a>
-        </div>
-      </div>
-    </section>
-    <!-- ANCHOR projects -->
-    <section id="projects" class="section is-medium">
-      <!-- projects -->
-      <h1 class="title has-text-centered has-text-weight-light is-uppercase">
-        Projects
-      </h1>
-      <div class="columns is-vcentered">
-        <div class="column has-text-centered">
-          <img src="./public/images/git.svg" />
-        </div>
-        <div class="column">
-          <article class="panel is-dark has-background-white">
-            <p class="panel-heading">
-              <i class="fab fa-git-alt"></i>&nbsp;&nbsp;Repositories
-              <a href="https://github.com/aaronm-git" class="button is-small is-link is-pulled-right"><i
-                  class="fas fa-external-link-alt"></i>&nbsp;&nbsp;aaronm-git</a>
+                margin-bottom: 0.75rem;
+              "
+            >
+              <i class="fas fa-poo"></i>&nbsp; I don't know that yet.<br /><strong
+                >But I can learn it!</strong
+              >
             </p>
-            <div id="panel-links-container">
-              <!-- <a
+            <a class="button" data-target-modal="skill-search-source-code"
+              >Source Code</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- ANCHOR projects -->
+      <section id="projects" class="section is-medium">
+        <!-- projects -->
+        <h1 class="title has-text-centered has-text-weight-light is-uppercase">
+          Projects
+        </h1>
+        <div class="columns is-vcentered">
+          <div class="column has-text-centered">
+            <img src="./public/images/git.svg" />
+          </div>
+          <div class="column">
+            <article class="panel is-dark has-background-white">
+              <p class="panel-heading">
+                <i class="fab fa-git-alt"></i>&nbsp;&nbsp;Repositories
+                <a
+                  href="https://github.com/aaronm-git"
+                  class="button is-small is-link is-pulled-right"
+                  ><i class="fas fa-external-link-alt"></i
+                  >&nbsp;&nbsp;aaronm-git</a
+                >
+              </p>
+              <div id="panel-links-container">
+                <!-- <a
                   class="panel-block"
                   href="https://github.com/aaronm-git/aaronm-git.github.io"
                 >
@@ -569,381 +673,463 @@
                   </span>
                   <span class="repoName">purecss-wordpress-blog</span>
                 </a> -->
-            </div>
-            <div class="panel-block">
-              <button id="expandRepos" class="button is-primary is-outlined is-fullwidth" onclick="expandRepos();">
-                <i class="fas fa-caret-down"></i>
-              </button>
-            </div>
-            <div class="panel-block" style="justify-content: space-between">
-              <a href="https://developer.github.com/v3/repos/#list-repositories-for-a-user"
-                class="has-text-grey is-size-7">
-                Powered By
-                <img src="./public/images/GitHub_Logo.png" alt="" class="is-inline"
-                  style="height: 1.5rem; position: relative; top: 6px" />
-                API
-              </a>
-              <a class="button" data-target-modal="github-source-code">Source Code</a>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="tile is-ancestor">
-        <div class="tile is-4 is-vertical is-parent">
-          <div class="tile is-child box">
-            <p class="title">YuGiOh! Card Database</p>
-            <p>
-              A Reactjs App utilizing Google's Firebase Cloud Firestore (NoSQL
-              database), Cloud Functions, and Cloud Storage to host cards from
-              my favorite collectible card game, YuGiOh!
-            </p>
-            <figure class="image is-relative" style="height: 200px; overflow: hidden; margin: 0.75rem 0">
-              <img src="./public/images/yugiohdb-ss.png" />
-              <div class="buttons is-expand">
-                <button type="button" class="button is-primary" data-target-modal="2-image">
-                  <span class="icon">
-                    <i class="fas fa-eye"></i>
-                  </span>
-                  <span> Preview </span>
+              </div>
+              <div class="panel-block">
+                <button
+                  id="expandRepos"
+                  class="button is-primary is-outlined is-fullwidth"
+                  onclick="expandRepos();"
+                >
+                  <i class="fas fa-caret-down"></i>
                 </button>
-                <a href="https://aaronm-git.github.io/yugiohdb-react-firebase-app" class="button is-link">
-                  <span class="icon">
-                    <i class="fas fa-external-link-alt"></i>
-                  </span>
-                  <span>Tour</span>
+              </div>
+              <div class="panel-block" style="justify-content: space-between">
+                <a
+                  href="https://developer.github.com/v3/repos/#list-repositories-for-a-user"
+                  class="has-text-grey is-size-7"
+                >
+                  Powered By
+                  <img
+                    src="./public/images/GitHub_Logo.png"
+                    alt=""
+                    class="is-inline"
+                    style="height: 1.5rem; position: relative; top: 6px"
+                  />
+                  API
                 </a>
+                <a class="button" data-target-modal="github-source-code"
+                  >Source Code</a
+                >
               </div>
-            </figure>
-            <h5 class="subtitle">Technologies Used</h5>
-            <div class="tags">
-              <span class="tag"> HTML </span>
-              <span class="tag"> CSS </span>
-              <span class="tag"> Reactjs </span>
-              <span class="tag"> JSX </span>
-              <span class="tag"> Firebase </span>
-              <span class="tag"> Firestore </span>
-              <span class="tag"> Cloud Storage </span>
-              <span class="tag"> Cloud Functions </span>
-              <span class="tag"> Git </span>
-              <span class="tag"> Bootstrap </span>
-            </div>
-          </div>
-          <div class="tile is-child box">
-            <p class="title">Other Projects</p>
-            <p>
-              A list of other websites and projects which I contributed on.
-            </p>
-            <ul style="margin: 0.75rem 0">
-              <li>
-                <a href="https://uplyftcapital.com/purple-platform/" rel="noreferrer noopener"><i
-                    class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Purple
-                  Platform CRM</a>
-              </li>
-              <li>
-                <a href="https://greensgaragemiami.com" rel="noreferrer noopener"><i
-                    class="fas fa-external-link-alt"></i>&nbsp;&nbsp;greensgaragemiami.com</a>
-              </li>
-              <li>
-                <a href="https://flyingacademy.com" rel="noreferrer noopener"><i
-                    class="fas fa-external-link-alt"></i>&nbsp;&nbsp;flyingacademy.com</a>
-              </li>
-            </ul>
+            </article>
           </div>
         </div>
-        <div class="tile is-parent">
-          <div class="tile is-child box">
-            <p class="title">Ripple Platform</p>
-            <p>
-              Pool Cleaning Service CRM Cloud Software. Ripple Platform is
-              designed to help you manage your business online. Track all your
-              customers, each with the ability to have multiple locations and
-              bodies of water. Always have up-to-date contact information,
-              wherever you go. Everything you need to customize and optimize
-              routes, along with tracking all your service stop data and pool
-              vitals.
-            </p>
-            <figure class="image is-relative" style="height: 400px; overflow: hidden; margin: 0.75rem 0">
-              <img src="./public/images/ripple-platform-screenshot.png" />
-              <div class="buttons is-expand">
-                <button type="button" class="button is-primary" data-target-modal="3-image">
-                  <span class="icon">
-                    <i class="fas fa-eye"></i>
-                  </span>
-                  <span> Preview </span>
-                </button>
-                <a href="https://app.ripple-platform.com" class="button is-link">
-                  <span class="icon">
-                    <i class="fas fa-external-link-alt"></i>
-                  </span>
-                  <span> Tour </span>
-                </a>
-              </div>
-            </figure>
-            <h5 class="subtitle">Technologies Used</h5>
-            <div class="tags">
-              <span class="tag"> HTML </span>
-              <span class="tag"> JavaScript </span>
-              <span class="tag"> Node.js </span>
-              <span class="tag"> MongoDB </span>
-              <span class="tag"> Responsive Design </span>
-              <span class="tag"> Nunjucks </span>
-              <span class="tag"> Bootstrap </span>
-              <span class="tag"> Express.js </span>
-              <span class="tag"> Passport.js </span>
-              <span class="tag"> Google Cloud Platform (GCL) </span>
-              <span class="tag"> Google App Engine (GCL) </span>
-              <span class="tag"> Chart.js </span>
-              <span class="tag"> Bing Maps API </span>
-              <span class="tag"> JQuery </span>
-              <span class="tag"> DataTables.net </span>
-              <span class="tag"> Git </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ANCHOR timeline -->
-    <section id="experience" class="section is-medium">
-      <h2 class="title has-text-centered has-text-weight-light is-uppercase">
-        Experience
-      </h2>
-      <div class="container">
-        <!-- desktop -->
-        <div class="timeline is-centered">
-          <header class="timeline-header">
-            <span class="tag is-medium is-primary">2011</span>
-          </header>
-          <div class="timeline-item is-primary">
-            <div class="timeline-marker is-icon is-primary">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <div class="timeline-content">
-              <div class="heading">
-                <p>January</p>
-                <p class="is-size-6">Computer Science</p>
-                <p class="has-text-grey">Miami Dade College</p>
-              </div>
-              <!-- <p>Computer Science - Miami Dade College</p> -->
-            </div>
-          </div>
-          <header class="timeline-header">
-            <span class="tag is-primary">2012</span>
-          </header>
-          <div class="timeline-item is-primary">
-            <div class="timeline-marker is-primary is-image is-32x32">
-              <img src="./public/images/university-of-miami-logo.png" style="height: 100%" />
-            </div>
-            <div class="timeline-content">
-              <div class="heading">
-                <p>February</p>
-                <p class="is-size-6">
-                  Front-End Web Development Certification
-                </p>
-                <p class="has-text-grey">University of Miami</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item is-primary">
-            <div class="timeline-marker is-primary"></div>
-            <div class="timeline-content">
-              <div class="heading">
-                <p>March</p>
-                <p class="is-size-6">Front-End Web Developer</p>
-                <p class="has-text-grey">Freelance</p>
-              </div>
-            </div>
-          </div>
-          <header class="timeline-header">
-            <span class="tag is-primary">2014</span>
-          </header>
-          <div class="timeline-item is-primary">
-            <div class="timeline-marker is-primary is-image is-32x32">
-              <img src="./public/images/geek-squad-logo.png" />
-            </div>
-            <div class="timeline-content">
-              <div class="heading">
-                <p>June</p>
-                <p class="is-size-6">Consultation / Repair</p>
-                <p class="has-text-grey">Geek Squad</p>
-              </div>
-            </div>
-          </div>
-          <header class="timeline-header">
-            <span class="tag is-primary">2016</span>
-          </header>
-          <div class="timeline-item is-primary">
-            <div class="timeline-marker is-primary is-image is-32x32">
-              <img src="./public/images/practicepanther-logo.jpeg" />
-            </div>
-            <div class="timeline-content">
-              <div class="heading">
-                <p>May</p>
-                <p class="is-size-6">Senior Tech Support Specialist</p>
-                <p class="has-text-grey">PracticePanther</p>
-              </div>
-            </div>
-          </div>
-          <header class="timeline-header">
-            <span class="tag is-primary">2017</span>
-          </header>
-          <div class="timeline-item is-primary">
-            <div class="timeline-marker is-icon is-primary">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <div class="timeline-content">
-              <div class="heading">
-                <p>February</p>
-                <p class="is-size-6">
-                  Full-Stack Web Development Certification
-                </p>
-                <p class="has-text-grey">Ironhack</p>
-              </div>
-            </div>
-          </div>
-          <header class="timeline-header">
-            <span class="tag is-primary">2018</span>
-          </header>
-          <div class="timeline-item is-primary">
-            <div class="timeline-marker is-primary"></div>
-            <div class="timeline-content">
-              <div class="heading">
-                <p>February</p>
-                <p class="is-size-6">Front-End Web Developer</p>
-                <p class="has-text-grey">Flying Academy</p>
-              </div>
-            </div>
-          </div>
-          <header class="timeline-header">
-            <span class="tag is-primary">2019</span>
-          </header>
-          <div class="timeline-item is-primary">
-            <div class="timeline-marker is-primary is-image is-32x32">
-              <img src="./public/images/uplyft-logo.jpg" />
-            </div>
-            <div class="timeline-content">
-              <div class="heading">
-                <p>January</p>
-                <p class="is-size-6">Full-Stack Web Developer</p>
-                <p class="has-text-grey">Uplyft Capital</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item is-primary">
-            <div class="timeline-marker is-primary"></div>
-            <div class="timeline-content">
-              <div class="heading">
-                <p>October</p>
-                <p class="is-size-6">Full-Stack Web Developer</p>
-                <p class="has-text-grey">Flopool</p>
-              </div>
-            </div>
-          </div>
-          <header class="timeline-header">
-            <span class="tag is-primary">2020</span>
-          </header>
-          <div class="timeline-item is-primary">
-            <div class="timeline-marker is-primary is-image is-32x32">
-              <img src="./public/images/originpc.png" />
-            </div>
-            <div class="timeline-content">
-              <div class="heading">
-                <p>May</p>
-                <p class="is-size-6">Web Designer</p>
-                <p class="has-text-grey">Origin PC</p>
-              </div>
-            </div>
-          </div>
-          <header class="timeline-header">
-            <span class="tag is-medium">Present</span>
-          </header>
-        </div>
-      </div>
-    </section>
-    <!-- !SECTION -->
-  </div>
-  <!-- ANCHOR contact -->
-  <section id="contact" class="hero is-primary is-bold">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title has-text-centered has-text-weight-light is-uppercase">
-          Contact
-        </h2>
-        <div class="columns is-vcentered is-centered">
-          <div class="box column is-two-fifths">
-            <form action="https://formspree.io/xaydzyqa" method="POST">
-              <div class="field">
-                <label class="label">Name</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Your first name and last name" name="name" required />
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input" type="email" placeholder="Your email" name="_replyto" required />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">Message</label>
-                <div class="control">
-                  <textarea class="textarea" placeholder="Your message" name="message" required></textarea>
-                </div>
-              </div>
-              <input class="input" type="hidden" value="aaronm-git.github.io: Contact Form Submission"
-                name="_subject" />
-              <div class="field is-grouped">
-                <div class="control">
-                  <button class="button is-primary">
+        <div class="tile is-ancestor">
+          <div class="tile is-4 is-vertical is-parent">
+            <div class="tile is-child box">
+              <p class="title">YuGiOh! Card Database</p>
+              <p>
+                A Reactjs App utilizing Google's Firebase Cloud Firestore (NoSQL
+                database), Cloud Functions, and Cloud Storage to host cards from
+                my favorite collectible card game, YuGiOh!
+              </p>
+              <figure
+                class="image is-relative"
+                style="height: 200px; overflow: hidden; margin: 0.75rem 0"
+              >
+                <img src="./public/images/yugiohdb-ss.png" />
+                <div class="buttons is-expand">
+                  <button
+                    type="button"
+                    class="button is-primary"
+                    data-target-modal="2-image"
+                  >
                     <span class="icon">
-                      <i class="fa fa-paper-plane"></i>
+                      <i class="fas fa-eye"></i>
                     </span>
-                    <span>Send</span>
+                    <span> Preview </span>
                   </button>
+                  <a
+                    href="https://aaronm-git.github.io/yugiohdb-react-firebase-app"
+                    class="button is-link"
+                  >
+                    <span class="icon">
+                      <i class="fas fa-external-link-alt"></i>
+                    </span>
+                    <span>Tour</span>
+                  </a>
+                </div>
+              </figure>
+              <h5 class="subtitle">Technologies Used</h5>
+              <div class="tags">
+                <span class="tag"> HTML </span>
+                <span class="tag"> CSS </span>
+                <span class="tag"> Reactjs </span>
+                <span class="tag"> JSX </span>
+                <span class="tag"> Firebase </span>
+                <span class="tag"> Firestore </span>
+                <span class="tag"> Cloud Storage </span>
+                <span class="tag"> Cloud Functions </span>
+                <span class="tag"> Git </span>
+                <span class="tag"> Bootstrap </span>
+              </div>
+            </div>
+            <div class="tile is-child box">
+              <p class="title">Other Projects</p>
+              <p>
+                A list of other websites and projects which I contributed on.
+              </p>
+              <ul style="margin: 0.75rem 0">
+                <li>
+                  <a
+                    href="https://uplyftcapital.com/purple-platform/"
+                    rel="noreferrer noopener"
+                    ><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Purple
+                    Platform CRM</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://greensgaragemiami.com"
+                    rel="noreferrer noopener"
+                    ><i class="fas fa-external-link-alt"></i
+                    >&nbsp;&nbsp;greensgaragemiami.com</a
+                  >
+                </li>
+                <li>
+                  <a href="https://flyingacademy.com" rel="noreferrer noopener"
+                    ><i class="fas fa-external-link-alt"></i
+                    >&nbsp;&nbsp;flyingacademy.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <p class="title">Ripple Platform</p>
+              <p>
+                Pool Cleaning Service CRM Cloud Software. Ripple Platform is
+                designed to help you manage your business online. Track all your
+                customers, each with the ability to have multiple locations and
+                bodies of water. Always have up-to-date contact information,
+                wherever you go. Everything you need to customize and optimize
+                routes, along with tracking all your service stop data and pool
+                vitals.
+              </p>
+              <figure
+                class="image is-relative"
+                style="height: 400px; overflow: hidden; margin: 0.75rem 0"
+              >
+                <img src="./public/images/ripple-platform-screenshot.png" />
+                <div class="buttons is-expand">
+                  <button
+                    type="button"
+                    class="button is-primary"
+                    data-target-modal="3-image"
+                  >
+                    <span class="icon">
+                      <i class="fas fa-eye"></i>
+                    </span>
+                    <span> Preview </span>
+                  </button>
+                  <a
+                    href="https://app.ripple-platform.com"
+                    class="button is-link"
+                  >
+                    <span class="icon">
+                      <i class="fas fa-external-link-alt"></i>
+                    </span>
+                    <span> Tour </span>
+                  </a>
+                </div>
+              </figure>
+              <h5 class="subtitle">Technologies Used</h5>
+              <div class="tags">
+                <span class="tag"> HTML </span>
+                <span class="tag"> JavaScript </span>
+                <span class="tag"> Node.js </span>
+                <span class="tag"> MongoDB </span>
+                <span class="tag"> Responsive Design </span>
+                <span class="tag"> Nunjucks </span>
+                <span class="tag"> Bootstrap </span>
+                <span class="tag"> Express.js </span>
+                <span class="tag"> Passport.js </span>
+                <span class="tag"> Google Cloud Platform (GCL) </span>
+                <span class="tag"> Google App Engine (GCL) </span>
+                <span class="tag"> Chart.js </span>
+                <span class="tag"> Bing Maps API </span>
+                <span class="tag"> JQuery </span>
+                <span class="tag"> DataTables.net </span>
+                <span class="tag"> Git </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ANCHOR timeline -->
+      <section id="experience" class="section is-medium">
+        <h2 class="title has-text-centered has-text-weight-light is-uppercase">
+          Experience
+        </h2>
+        <div class="container">
+          <!-- desktop -->
+          <div class="timeline is-centered">
+            <header class="timeline-header">
+              <span class="tag is-medium is-primary">2011</span>
+            </header>
+            <div class="timeline-item is-primary">
+              <div class="timeline-marker is-icon is-primary">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="timeline-content">
+                <div class="heading">
+                  <p>January</p>
+                  <p class="is-size-6">Computer Science</p>
+                  <p class="has-text-grey">Miami Dade College</p>
+                </div>
+                <!-- <p>Computer Science - Miami Dade College</p> -->
+              </div>
+            </div>
+            <header class="timeline-header">
+              <span class="tag is-primary">2012</span>
+            </header>
+            <div class="timeline-item is-primary">
+              <div class="timeline-marker is-primary is-image is-32x32">
+                <img
+                  src="./public/images/university-of-miami-logo.png"
+                  style="height: 100%"
+                />
+              </div>
+              <div class="timeline-content">
+                <div class="heading">
+                  <p>February</p>
+                  <p class="is-size-6">
+                    Front-End Web Development Certification
+                  </p>
+                  <p class="has-text-grey">University of Miami</p>
                 </div>
               </div>
-              <a href="https://formspree.io" class="has-text-right has-text-grey is-pulled-right" target="_blank">
-                <small>Powered By</small>
-                <img src="./public/images/formspree-logo.png" alt="powered by formspree.io" style="
+            </div>
+            <div class="timeline-item is-primary">
+              <div class="timeline-marker is-primary"></div>
+              <div class="timeline-content">
+                <div class="heading">
+                  <p>March</p>
+                  <p class="is-size-6">Front-End Web Developer</p>
+                  <p class="has-text-grey">Freelance</p>
+                </div>
+              </div>
+            </div>
+            <header class="timeline-header">
+              <span class="tag is-primary">2014</span>
+            </header>
+            <div class="timeline-item is-primary">
+              <div class="timeline-marker is-primary is-image is-32x32">
+                <img src="./public/images/geek-squad-logo.png" />
+              </div>
+              <div class="timeline-content">
+                <div class="heading">
+                  <p>June</p>
+                  <p class="is-size-6">Consultation / Repair</p>
+                  <p class="has-text-grey">Geek Squad</p>
+                </div>
+              </div>
+            </div>
+            <header class="timeline-header">
+              <span class="tag is-primary">2016</span>
+            </header>
+            <div class="timeline-item is-primary">
+              <div class="timeline-marker is-primary is-image is-32x32">
+                <img src="./public/images/practicepanther-logo.jpeg" />
+              </div>
+              <div class="timeline-content">
+                <div class="heading">
+                  <p>May</p>
+                  <p class="is-size-6">Senior Tech Support Specialist</p>
+                  <p class="has-text-grey">PracticePanther</p>
+                </div>
+              </div>
+            </div>
+            <header class="timeline-header">
+              <span class="tag is-primary">2017</span>
+            </header>
+            <div class="timeline-item is-primary">
+              <div class="timeline-marker is-icon is-primary">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="timeline-content">
+                <div class="heading">
+                  <p>February</p>
+                  <p class="is-size-6">
+                    Full-Stack Web Development Certification
+                  </p>
+                  <p class="has-text-grey">Ironhack</p>
+                </div>
+              </div>
+            </div>
+            <header class="timeline-header">
+              <span class="tag is-primary">2018</span>
+            </header>
+            <div class="timeline-item is-primary">
+              <div class="timeline-marker is-primary"></div>
+              <div class="timeline-content">
+                <div class="heading">
+                  <p>February</p>
+                  <p class="is-size-6">Front-End Web Developer</p>
+                  <p class="has-text-grey">Flying Academy</p>
+                </div>
+              </div>
+            </div>
+            <header class="timeline-header">
+              <span class="tag is-primary">2019</span>
+            </header>
+            <div class="timeline-item is-primary">
+              <div class="timeline-marker is-primary is-image is-32x32">
+                <img src="./public/images/uplyft-logo.jpg" />
+              </div>
+              <div class="timeline-content">
+                <div class="heading">
+                  <p>January</p>
+                  <p class="is-size-6">Full-Stack Web Developer</p>
+                  <p class="has-text-grey">Uplyft Capital</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item is-primary">
+              <div class="timeline-marker is-primary"></div>
+              <div class="timeline-content">
+                <div class="heading">
+                  <p>October</p>
+                  <p class="is-size-6">Full-Stack Web Developer</p>
+                  <p class="has-text-grey">Flopool</p>
+                </div>
+              </div>
+            </div>
+            <header class="timeline-header">
+              <span class="tag is-primary">2020</span>
+            </header>
+            <div class="timeline-item is-primary">
+              <div class="timeline-marker is-primary is-image is-32x32">
+                <img src="./public/images/originpc.png" />
+              </div>
+              <div class="timeline-content">
+                <div class="heading">
+                  <p>May</p>
+                  <p class="is-size-6">Web Designer</p>
+                  <p class="has-text-grey">Origin PC</p>
+                </div>
+              </div>
+            </div>
+            <header class="timeline-header">
+              <span class="tag is-medium">Present</span>
+            </header>
+          </div>
+        </div>
+      </section>
+      <!-- !SECTION -->
+    </div>
+    <!-- ANCHOR contact -->
+    <section id="contact" class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h2
+            class="title has-text-centered has-text-weight-light is-uppercase"
+          >
+            Contact
+          </h2>
+          <div class="columns is-vcentered is-centered">
+            <div class="box column is-two-fifths">
+              <form action="https://formspree.io/xaydzyqa" method="POST">
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Your first name and last name"
+                      name="name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input
+                      class="input"
+                      type="email"
+                      placeholder="Your email"
+                      name="_replyto"
+                      required
+                    />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea
+                      class="textarea"
+                      placeholder="Your message"
+                      name="message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <input
+                  class="input"
+                  type="hidden"
+                  value="aaronm-git.github.io: Contact Form Submission"
+                  name="_subject"
+                />
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button is-primary">
+                      <span class="icon">
+                        <i class="fa fa-paper-plane"></i>
+                      </span>
+                      <span>Send</span>
+                    </button>
+                  </div>
+                </div>
+                <a
+                  href="https://formspree.io"
+                  class="has-text-right has-text-grey is-pulled-right"
+                  target="_blank"
+                >
+                  <small>Powered By</small>
+                  <img
+                    src="./public/images/formspree-logo.png"
+                    alt="powered by formspree.io"
+                    style="
                       height: 22px;
                       margin-left: 6px;
                       position: relative;
                       top: 6px;
-                    " />
-              </a>
-            </form>
+                    "
+                  />
+                </a>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ANCHOR scroll to top button -->
-  <div class="top-btn-container is-hidden has-shadow" id="top-button">
-    <a href="#intro" class="top-button has-background-primary has-text-white">
-      <i class="fas fa-arrow-up"></i>
-    </a>
-  </div>
-  <!-- ANCHOR footer -->
-  <footer class="footer has-background-dark">
-    <div class="content has-text-centered">
-      <p class="has-text-white-ter">
-        <strong class="has-text-white-ter">Copyright <i class="far fa-copyright"></i> <span
-            id="copyright"></span></strong>
-        - Aaron Molina
-      </p>
-      <a href="https://bulma.io" target="_blank">
-        <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24" />
+    </section>
+    <!-- ANCHOR scroll to top button -->
+    <div class="top-btn-container is-hidden has-shadow" id="top-button">
+      <a href="#intro" class="top-button has-background-primary has-text-white">
+        <i class="fas fa-arrow-up"></i>
       </a>
     </div>
-  </footer>
-  <!-- ANCHOR modals -->
-  <div>
-    <div id="skill-search-source-code" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <pre class="box prettyprint lang-js">
+    <!-- ANCHOR footer -->
+    <footer class="footer has-background-dark">
+      <div class="content has-text-centered">
+        <p class="has-text-white-ter">
+          <strong class="has-text-white-ter"
+            >Copyright <i class="far fa-copyright"></i>
+            <span id="copyright"></span
+          ></strong>
+          - Aaron Molina
+        </p>
+        <a href="https://bulma.io" target="_blank">
+          <img
+            src="https://bulma.io/images/made-with-bulma.png"
+            alt="Made with Bulma"
+            width="128"
+            height="24"
+          />
+        </a>
+      </div>
+    </footer>
+    <!-- ANCHOR modals -->
+    <div>
+      <div id="skill-search-source-code" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <pre class="box prettyprint lang-js">
 
   // Skill Search Logic--------
   const searchInput = document.getElementById("search-skills");
@@ -964,13 +1150,13 @@
       : noResultsEl.classList.add("is-hidden");
   };
           </pre>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
       </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-    <div id="github-source-code" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <pre class="box prettyprint lang-js">
+      <div id="github-source-code" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <pre class="box prettyprint lang-js">
   // Github API Logic--------
   // This website's ID (sames as it's repo ID)
   const websiteId = 255731256;
@@ -995,53 +1181,70 @@
     // Add link element to DOM
     panelLinksContainer.append(panelLinkHTML);
   });
-      </pre>
+      </pre
+          >
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
       </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-    <div id="2-image" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="image" style="max-height: 92%; overflow: scroll; margin-bottom: 1rem">
-          <img src="./public/images/yugiohdb-ss.png" alt="YuGiOh! Card Database - Reactjs Firebase" />
-        </p>
-        <a href="https://aaronm-git.github.io/yugiohdb-react-firebase-app"
-          class="button is-light is-outlined is-pulled-right">
-          <span class="icon">
-            <i class="fas fa-external-link-alt"></i>
-          </span>
-          <span>Tour</span>
-        </a>
+      <div id="2-image" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <p
+            class="image"
+            style="max-height: 92%; overflow: scroll; margin-bottom: 1rem"
+          >
+            <img
+              src="./public/images/yugiohdb-ss.png"
+              alt="YuGiOh! Card Database - Reactjs Firebase"
+            />
+          </p>
+          <a
+            href="https://aaronm-git.github.io/yugiohdb-react-firebase-app"
+            class="button is-light is-outlined is-pulled-right"
+          >
+            <span class="icon">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+            <span>Tour</span>
+          </a>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
       </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-    <div id="3-image" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="image" style="max-height: 92%; overflow: scroll; margin-bottom: 1rem">
-          <img src="./public/images/ripple-platform-screenshot.png" alt="Ripple Platform image" />
-        </p>
-        <a href="https://app.ripple-platform.com" class="button is-light is-outlined is-pulled-right">
-          <span class="icon">
-            <i class="fas fa-external-link-alt"></i>
-          </span>
-          <span>Tour</span>
-        </a>
+      <div id="3-image" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <p
+            class="image"
+            style="max-height: 92%; overflow: scroll; margin-bottom: 1rem"
+          >
+            <img
+              src="./public/images/ripple-platform-screenshot.png"
+              alt="Ripple Platform image"
+            />
+          </p>
+          <a
+            href="https://app.ripple-platform.com"
+            class="button is-light is-outlined is-pulled-right"
+          >
+            <span class="icon">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+            <span>Tour</span>
+          </a>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
       </div>
-      <button class="modal-close is-large" aria-label="close"></button>
     </div>
-  </div>
-  <!-- SECTION dependencies -->
-  <div>
-    <!-- ANCHOR stylesheets -->
-    <link rel="stylesheet" href="./public/css/google-code-prettier.min.css" />
-    <!-- ANCHOR js scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-    <script src="./public/javascript/scripts.js"></script>
-  </div>
-  <!-- !SECTION -->
-</body>
-
+    <!-- SECTION dependencies -->
+    <div>
+      <!-- ANCHOR stylesheets -->
+      <link rel="stylesheet" href="./public/css/google-code-prettier.min.css" />
+      <!-- ANCHOR js scripts -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+      <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+      <script src="./public/javascript/scripts.js"></script>
+    </div>
+    <!-- !SECTION -->
+  </body>
 </html>
