@@ -1,8 +1,10 @@
+@charset "utf-8";
 // 1. Import the initial variables
 @import "./node_modules/bulma/sass/utilities/initial-variables";
 @import "./node_modules/bulma/sass/utilities/functions";
 @import "./node_modules/bulma/sass/utilities/derived-variables";
 
+$green: #23d160;
 $primary: $green;
 $primary-invert: findColorInvert($green);
 $primary-light: findLightColor($green);
@@ -73,6 +75,7 @@ $addColors: (
     $adobe-invert,
   ),
 );
+
 $colors: map-merge($colors, $addColors);
 
 @import "./node_modules/bulma/bulma.sass";

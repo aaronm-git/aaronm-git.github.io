@@ -32,9 +32,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-timeline@3.0.4/dist/css/bulma-timeline.min.css"> -->
-    <link rel="stylesheet" href="./public/css/bulma.css" />
+    <link rel="stylesheet" href="./public/css/my-bulma-styles.min.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
 
@@ -77,11 +75,12 @@
           <a class="navbar-item" href="#contact"
             ><span class="has-text-primary">#</span>&nbsp;Contact</a
           >
-          <!-- <a
+          <a
             class="navbar-item has-text-primary"
-            href="./public/images/Aaron Molina - Web Developer Resume.pdf"
-            ><i class="fas fa-download"></i>&nbsp;Download Resume</a
-          > -->
+            href="./public/images/Aaron Molina - Web Developer CV.pdf"
+            download="Aaron Molina - Web Developer CV"
+            ><i class="fas fa-download"></i>&nbsp;Download CV</a
+          >
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
@@ -90,6 +89,7 @@
                 class="button is-white has-text-twitter"
                 href="https://twitter.com/aaroncodes09"
                 target="_blank"
+                rel="noreferrer"
               >
                 <span class="icon">
                   <i class="fab fa-twitter"></i>
@@ -99,6 +99,7 @@
                 class="button is-white has-text-linkedin"
                 href="https://www.linkedin.com/in/aaronmolinag/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <span class="icon">
                   <i class="fab fa-linkedin"></i>
@@ -108,6 +109,7 @@
                 class="button is-white has-text-github"
                 href="https://github.com/aaronm-git"
                 target="_blank"
+                rel="noreferrer"
               >
                 <span class="icon">
                   <i class="fab fa-github"></i>
@@ -136,17 +138,17 @@
           <h1 class="title is-size-1">Aaron Molina</h1>
           <h2 class="subtitle"><span id="typed"></span></h2>
           <div class="buttons" style="justify-content: center">
-            <!-- <a
-              href="./public/images/Aaron Molina - Web Developer Resume.pdf"
-              target="_blank"
-              class="button is-medium is-primary is-inverted"
-            >
-              <span class="icon"><i class="fas fa-download"></i></span>
-              <span>Download Resume</span>
-            </a> -->
             <a href="#contact" class="button is-medium is-white">
               <span class="icon"><i class="fas fa-envelope"></i></span>
               <span>Contact</span>
+            </a>
+            <a
+              href="./public/images/Aaron Molina - Web Developer CV.pdf"
+              download="Aaron Molina - Web Developer CV"
+              class="button is-medium is-primary is-inverted"
+            >
+              <span class="icon"><i class="fas fa-download"></i></span>
+              <span>Download CV</span>
             </a>
           </div>
         </div>
@@ -156,15 +158,12 @@
     <div id="main" class="container">
       <!-- ANCHOR about -->
       <section id="about" class="section is-medium">
-        <h1 class="title has-text-centered has-text-weight-light is-uppercase">
+        <h3 class="title has-text-centered has-text-weight-bold is-uppercase">
           About
-        </h1>
+        </h3>
         <div class="columns is-vcentered">
-          <div class="column has-text-centered">
-            <img src="./public/images/prof.svg" />
-          </div>
           <div class="column">
-            <p>
+            <p class="mb-2">
               Since beginning my journey as a freelance developer nearly 8 years
               ago, I've done work for small and large companies, consulted for
               startups, and collaborated with talented teams to create digital
@@ -172,15 +171,30 @@
               confident, naturally curious, and perpetually working on improving
               my developer skills one problem at a time.
             </p>
+            <p>
+              On my spare time I like to tinker with my custom built gaming PC,
+              I like to run benchmarks against my computer, and I like to play
+              video games. I own all the latest next gen consoles thanks to a
+              bot I built using
+              <a
+                href="https://github.com/puppeteer/puppeteer"
+                target="_blank"
+                rel="noreferrer"
+                >puppeteerjs</a
+              >.
+            </p>
+          </div>
+          <div class="column has-text-centered">
+            <img src="./public/images/prof.svg" />
           </div>
         </div>
       </section>
       <!-- ANCHOR skills -->
       <section id="skills" class="section is-medium">
-        <h2 class="title has-text-centered has-text-weight-light is-uppercase">
+        <h3 class="title has-text-centered has-text-weight-bold is-uppercase">
           Skills
-        </h2>
-        <div class="columns is-vcentered reverse-columns">
+        </h3>
+        <div class="columns is-vcentered">
           <div class="column has-text-centered">
             <img src="./public/images/webdev.svg" />
           </div>
@@ -441,13 +455,10 @@
       <!-- ANCHOR projects -->
       <section id="projects" class="section is-medium">
         <!-- projects -->
-        <h1 class="title has-text-centered has-text-weight-light is-uppercase">
+        <h1 class="title has-text-centered has-text-weight-bold is-uppercase">
           Projects
         </h1>
         <div class="columns is-vcentered">
-          <div class="column has-text-centered">
-            <img src="./public/images/git.svg" />
-          </div>
           <div class="column">
             <article class="panel is-dark has-background-white">
               <p class="panel-heading">
@@ -703,155 +714,16 @@
               </div>
             </article>
           </div>
-        </div>
-        <div class="tile is-ancestor">
-          <div class="tile is-4 is-vertical is-parent">
-            <div class="tile is-child box">
-              <p class="title">YuGiOh! Card Database</p>
-              <p>
-                A Reactjs App utilizing Google's Firebase Cloud Firestore (NoSQL
-                database), Cloud Functions, and Cloud Storage to host cards from
-                my favorite collectible card game, YuGiOh!
-              </p>
-              <figure
-                class="image is-relative"
-                style="height: 200px; overflow: hidden; margin: 0.75rem 0"
-              >
-                <img src="./public/images/yugiohdb-ss.png" />
-                <div class="buttons is-expand">
-                  <button
-                    type="button"
-                    class="button is-primary"
-                    data-target-modal="2-image"
-                  >
-                    <span class="icon">
-                      <i class="fas fa-eye"></i>
-                    </span>
-                    <span> Preview </span>
-                  </button>
-                  <a
-                    href="https://aaronm-git.github.io/yugiohdb-react-firebase-app"
-                    class="button is-link"
-                  >
-                    <span class="icon">
-                      <i class="fas fa-external-link-alt"></i>
-                    </span>
-                    <span>Tour</span>
-                  </a>
-                </div>
-              </figure>
-              <h5 class="subtitle">Technologies Used</h5>
-              <div class="tags">
-                <span class="tag"> HTML </span>
-                <span class="tag"> CSS </span>
-                <span class="tag"> Reactjs </span>
-                <span class="tag"> JSX </span>
-                <span class="tag"> Firebase </span>
-                <span class="tag"> Firestore </span>
-                <span class="tag"> Cloud Storage </span>
-                <span class="tag"> Cloud Functions </span>
-                <span class="tag"> Git </span>
-                <span class="tag"> Bootstrap </span>
-              </div>
-            </div>
-            <div class="tile is-child box">
-              <p class="title">Other Projects</p>
-              <p>
-                A list of other websites and projects which I contributed on.
-              </p>
-              <ul style="margin: 0.75rem 0">
-                <li>
-                  <a
-                    href="https://uplyftcapital.com/purple-platform/"
-                    rel="noreferrer noopener"
-                    ><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Purple
-                    Platform CRM</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://greensgaragemiami.com"
-                    rel="noreferrer noopener"
-                    ><i class="fas fa-external-link-alt"></i
-                    >&nbsp;&nbsp;greensgaragemiami.com</a
-                  >
-                </li>
-                <li>
-                  <a href="https://flyingacademy.com" rel="noreferrer noopener"
-                    ><i class="fas fa-external-link-alt"></i
-                    >&nbsp;&nbsp;flyingacademy.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="tile is-parent">
-            <div class="tile is-child box">
-              <p class="title">Ripple Platform</p>
-              <p>
-                Pool Cleaning Service CRM Cloud Software. Ripple Platform is
-                designed to help you manage your business online. Track all your
-                customers, each with the ability to have multiple locations and
-                bodies of water. Always have up-to-date contact information,
-                wherever you go. Everything you need to customize and optimize
-                routes, along with tracking all your service stop data and pool
-                vitals.
-              </p>
-              <figure
-                class="image is-relative"
-                style="height: 400px; overflow: hidden; margin: 0.75rem 0"
-              >
-                <img src="./public/images/ripple-platform-screenshot.png" />
-                <div class="buttons is-expand">
-                  <button
-                    type="button"
-                    class="button is-primary"
-                    data-target-modal="3-image"
-                  >
-                    <span class="icon">
-                      <i class="fas fa-eye"></i>
-                    </span>
-                    <span> Preview </span>
-                  </button>
-                  <a
-                    href="https://app.ripple-platform.com"
-                    class="button is-link"
-                  >
-                    <span class="icon">
-                      <i class="fas fa-external-link-alt"></i>
-                    </span>
-                    <span> Tour </span>
-                  </a>
-                </div>
-              </figure>
-              <h5 class="subtitle">Technologies Used</h5>
-              <div class="tags">
-                <span class="tag"> HTML </span>
-                <span class="tag"> JavaScript </span>
-                <span class="tag"> Node.js </span>
-                <span class="tag"> MongoDB </span>
-                <span class="tag"> Responsive Design </span>
-                <span class="tag"> Nunjucks </span>
-                <span class="tag"> Bootstrap </span>
-                <span class="tag"> Express.js </span>
-                <span class="tag"> Passport.js </span>
-                <span class="tag"> Google Cloud Platform (GCL) </span>
-                <span class="tag"> Google App Engine (GCL) </span>
-                <span class="tag"> Chart.js </span>
-                <span class="tag"> Bing Maps API </span>
-                <span class="tag"> JQuery </span>
-                <span class="tag"> DataTables.net </span>
-                <span class="tag"> Git </span>
-              </div>
-            </div>
+          <div class="column has-text-centered">
+            <img src="./public/images/git.svg" />
           </div>
         </div>
       </section>
       <!-- ANCHOR timeline -->
       <section id="experience" class="section is-medium">
-        <h2 class="title has-text-centered has-text-weight-light is-uppercase">
+        <h3 class="title has-text-centered has-text-weight-bold is-uppercase">
           Experience
-        </h2>
+        </h3>
         <div class="container">
           <!-- desktop -->
           <div class="timeline is-centered">
@@ -864,7 +736,7 @@
               </div>
               <div class="timeline-content">
                 <div class="heading">
-                  <p>January</p>
+                  <p>January 2011</p>
                   <p class="is-size-6">Computer Science</p>
                   <p class="has-text-grey">Miami Dade College</p>
                 </div>
@@ -883,7 +755,7 @@
               </div>
               <div class="timeline-content">
                 <div class="heading">
-                  <p>February</p>
+                  <p>February 2012</p>
                   <p class="is-size-6">
                     Front-End Web Development Certification
                   </p>
@@ -895,7 +767,7 @@
               <div class="timeline-marker is-primary"></div>
               <div class="timeline-content">
                 <div class="heading">
-                  <p>March</p>
+                  <p>March 2012</p>
                   <p class="is-size-6">Front-End Web Developer</p>
                   <p class="has-text-grey">Freelance</p>
                 </div>
@@ -910,7 +782,7 @@
               </div>
               <div class="timeline-content">
                 <div class="heading">
-                  <p>June</p>
+                  <p>June 2014</p>
                   <p class="is-size-6">Consultation / Repair</p>
                   <p class="has-text-grey">Geek Squad</p>
                 </div>
@@ -925,7 +797,7 @@
               </div>
               <div class="timeline-content">
                 <div class="heading">
-                  <p>May</p>
+                  <p>May 2016</p>
                   <p class="is-size-6">Senior Tech Support Specialist</p>
                   <p class="has-text-grey">PracticePanther</p>
                 </div>
@@ -940,7 +812,7 @@
               </div>
               <div class="timeline-content">
                 <div class="heading">
-                  <p>February</p>
+                  <p>February 2017</p>
                   <p class="is-size-6">
                     Full-Stack Web Development Certification
                   </p>
@@ -952,12 +824,26 @@
               <span class="tag is-primary">2018</span>
             </header>
             <div class="timeline-item is-primary">
-              <div class="timeline-marker is-primary"></div>
+              <div class="timeline-marker is-primary is-image is-32x32">
+                <img src="./public/images/flying-academy.jpg" />
+              </div>
               <div class="timeline-content">
                 <div class="heading">
-                  <p>February</p>
-                  <p class="is-size-6">Front-End Web Developer</p>
+                  <p>February 2018</p>
+                  <p class="is-size-6">Front-End Developer</p>
                   <p class="has-text-grey">Flying Academy</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item is-primary">
+              <div class="timeline-marker is-primary is-image is-32x32">
+                <img src="./public/images/upwork.jpg" />
+              </div>
+              <div class="timeline-content">
+                <div class="heading">
+                  <p>August 2018</p>
+                  <p class="is-size-6">Front-End Developer/Web Consultant</p>
+                  <p class="has-text-grey">UPWORK</p>
                 </div>
               </div>
             </div>
@@ -970,19 +856,9 @@
               </div>
               <div class="timeline-content">
                 <div class="heading">
-                  <p>January</p>
+                  <p>January 2019</p>
                   <p class="is-size-6">Full-Stack Web Developer</p>
                   <p class="has-text-grey">Uplyft Capital</p>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-item is-primary">
-              <div class="timeline-marker is-primary"></div>
-              <div class="timeline-content">
-                <div class="heading">
-                  <p>October</p>
-                  <p class="is-size-6">Full-Stack Web Developer</p>
-                  <p class="has-text-grey">Flopool</p>
                 </div>
               </div>
             </div>
@@ -995,9 +871,21 @@
               </div>
               <div class="timeline-content">
                 <div class="heading">
-                  <p>May</p>
+                  <p>May 2020</p>
                   <p class="is-size-6">Web Designer</p>
-                  <p class="has-text-grey">Origin PC</p>
+                  <p class="has-text-grey">ORIGIN PC</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item is-primary">
+              <div class="timeline-marker is-primary is-image is-32x32">
+                <img src="./public/images/corsair.png" />
+              </div>
+              <div class="timeline-content">
+                <div class="heading">
+                  <p>April 2020</p>
+                  <p class="is-size-6">Web Designer</p>
+                  <p class="has-text-grey">CORSAIR</p>
                 </div>
               </div>
             </div>
@@ -1013,11 +901,9 @@
     <section id="contact" class="hero is-primary is-bold">
       <div class="hero-body">
         <div class="container">
-          <h2
-            class="title has-text-centered has-text-weight-light is-uppercase"
-          >
+          <h3 class="title has-text-centered has-text-weight-bold is-uppercase">
             Contact
-          </h2>
+          </h3>
           <div class="columns is-vcentered is-centered">
             <div class="box column is-two-fifths">
               <form action="https://formspree.io/xaydzyqa" method="POST">
@@ -1079,6 +965,7 @@
                   href="https://formspree.io"
                   class="has-text-right has-text-grey is-pulled-right"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <small>Powered By</small>
                   <img
@@ -1114,7 +1001,7 @@
           ></strong>
           - Aaron Molina
         </p>
-        <a href="https://bulma.io" target="_blank">
+        <a href="https://bulma.io" target="_blank" rel="noreferrer">
           <img
             src="https://bulma.io/images/made-with-bulma.png"
             alt="Made with Bulma"
@@ -1183,54 +1070,6 @@
   });
       </pre
           >
-        </div>
-        <button class="modal-close is-large" aria-label="close"></button>
-      </div>
-      <div id="2-image" class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <p
-            class="image"
-            style="max-height: 92%; overflow: scroll; margin-bottom: 1rem"
-          >
-            <img
-              src="./public/images/yugiohdb-ss.png"
-              alt="YuGiOh! Card Database - Reactjs Firebase"
-            />
-          </p>
-          <a
-            href="https://aaronm-git.github.io/yugiohdb-react-firebase-app"
-            class="button is-light is-outlined is-pulled-right"
-          >
-            <span class="icon">
-              <i class="fas fa-external-link-alt"></i>
-            </span>
-            <span>Tour</span>
-          </a>
-        </div>
-        <button class="modal-close is-large" aria-label="close"></button>
-      </div>
-      <div id="3-image" class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <p
-            class="image"
-            style="max-height: 92%; overflow: scroll; margin-bottom: 1rem"
-          >
-            <img
-              src="./public/images/ripple-platform-screenshot.png"
-              alt="Ripple Platform image"
-            />
-          </p>
-          <a
-            href="https://app.ripple-platform.com"
-            class="button is-light is-outlined is-pulled-right"
-          >
-            <span class="icon">
-              <i class="fas fa-external-link-alt"></i>
-            </span>
-            <span>Tour</span>
-          </a>
         </div>
         <button class="modal-close is-large" aria-label="close"></button>
       </div>
