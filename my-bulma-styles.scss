@@ -1,5 +1,5 @@
 @charset "utf-8";
-// 1. Import the initial variables
+
 @import "./node_modules/bulma/sass/utilities/initial-variables";
 @import "./node_modules/bulma/sass/utilities/functions";
 @import "./node_modules/bulma/sass/utilities/derived-variables";
@@ -9,28 +9,10 @@ $primary: $green;
 $primary-invert: findColorInvert($green);
 $primary-light: findLightColor($green);
 $primary-dark: findDarkColor($green);
-// setup custom colors
-$linkedin: #0077b5;
-$linkedin-invert: findColorInvert($linkedin);
-$twitter: #55acee;
-$twitter-invert: findColorInvert($twitter);
-$github: #333;
-$github-invert: findColorInvert($github);
-$sass: #cf649a;
-$sass-invert: findColorInvert($sass);
-$git: #f05133;
-$git-invert: findColorInvert($git);
-$mongodb: #009431;
-$mongodb-invert: findColorInvert($mongodb);
-$bootstrap: #563d7c;
-$bootstrap-invert: findColorInvert($bootstrap);
-$html: #e44d26;
-$html-invert: findColorInvert($html);
-$adobe: red;
-$adobe-invert: findColorInvert($adobe);
+
 // other variable
 $dimensions: 16 24 32 48 64 96 128 200;
-// add color variables to the color map.
+
 $addColors: (
   "primary": (
     $primary,
@@ -39,44 +21,80 @@ $addColors: (
     $primary-dark,
   ),
   "twitter": (
-    $twitter,
-    $twitter-invert,
+    #55acee,
+    findColorInvert(#55acee),
   ),
   "linkedin": (
-    $linkedin,
-    $linkedin-invert,
+    #0077b5,
+    findColorInvert(#0077b5),
   ),
   "github": (
-    $github,
-    $github-invert,
+    #333,
+    findColorInvert(#333),
   ),
-  "sass": (
-    $sass,
-    $sass-invert,
+);
+
+$skillColors: (
+  "color-html5": (
+    #e44d26,
+    findColorInvert(#e44d26),
   ),
-  "git": (
-    $git,
-    $git-invert,
+  "color-css3": (
+    #55acee,
+    findColorInvert(#55acee),
   ),
-  "mongodb": (
-    $mongodb,
-    $mongodb-invert,
+  "color-sass": (
+    #cf649a,
+    findColorInvert(#cf649a),
   ),
-  "bootstrap": (
-    $bootstrap,
-    $bootstrap-invert,
+  "color-mongodb": (
+    #009431,
+    findColorInvert(#009431),
   ),
-  "html": (
-    $html,
-    $html-invert,
+  "color-bootstrap": (
+    #563d7c,
+    findColorInvert(#563d7c),
   ),
-  "adobe": (
-    $adobe,
-    $adobe-invert,
+  "color-adobe": (
+    red,
+    findColorInvert(red),
+  ),
+  "color-javascript": (
+    yellow,
+    findColorInvert(yellow),
+  ),
+  "color-nodejs": (
+    #92c63d,
+    findColorInvert(#92c63d),
+  ),
+  "color-wordpress": (
+    #207197,
+    findColorInvert(#207197),
+  ),
+  "color-git": (
+    #e84e32,
+    findColorInvert(#e84e32),
+  ),
+  "color-photoshop": (
+    #30b1fb,
+    findColorInvert(#30b1fb),
+  ),
+  "color-dreamweaver": (
+    #adfa00,
+    findColorInvert(#adfa00),
+  ),
+  "color-aws": (
+    #f89400,
+    findColorInvert(#f89400),
+  ),
+  "color-heroku": (
+    #5f15ac,
+    findColorInvert(#5f15ac),
   ),
 );
 
 $colors: map-merge($colors, $addColors);
+$colors: map-merge($colors, $skillColors);
 
 @import "./node_modules/bulma/bulma.sass";
 @import "./node_modules/bulma-timeline/src/sass/index.sass";

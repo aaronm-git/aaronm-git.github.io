@@ -1,14 +1,22 @@
-document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+//  NOTE dynamic copyright year
+document
+  .getElementById("copyright")
+  .appendChild(document.createTextNode(new Date().getFullYear()));
 
 {
-  var typed = new Typed("#typed", {
-    strings: ["Full-Stack Web Developer.", "Experienced Web Designer."],
-    typeSpeed: 75,
+  new Typed("#typed", {
+    strings: [
+      "Full-Stack Web Developer.",
+      "Experienced Web Designer.",
+      "JAM Stack Developer.",
+    ],
+    typeSpeed: 50,
     loop: true,
     backDelay: 2000,
   });
 }
-// nav-burger logic
+
+//ANCHOR nav-burger logic
 {
   document.addEventListener("DOMContentLoaded", () => {
     // Get all "navbar-burger" elements
@@ -39,7 +47,7 @@ document.getElementById('copyright').appendChild(document.createTextNode(new Dat
     }
   });
 }
-// To top button
+//ANCHOR To top button
 {
   window.addEventListener("scroll", function () {
     const el = document.getElementById("top-button");
@@ -54,7 +62,7 @@ document.getElementById('copyright').appendChild(document.createTextNode(new Dat
     }
   });
 }
-// Modal logic
+//ANCHOR Modal logic
 {
   const buttons = document.querySelectorAll("[data-target-modal]");
   buttons.forEach((btn) => {
@@ -71,7 +79,7 @@ document.getElementById('copyright').appendChild(document.createTextNode(new Dat
     });
   });
 }
-// anchor smooth scroll
+//ANCHOR anchor smooth scroll
 {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
@@ -83,7 +91,7 @@ document.getElementById('copyright').appendChild(document.createTextNode(new Dat
     });
   });
 }
-// github API logic
+//ANCHOR github API logic
 (async () => {
   const websiteId = 255731256;
   const repos = await fetch(
@@ -111,7 +119,17 @@ document.getElementById('copyright').appendChild(document.createTextNode(new Dat
   });
 })();
 
-// Skill Search Logic
+(() => {
+  const skillContainerHTML = document.getElementById("skill-container");
+  skills
+    // .sort((a, b) => a.title.localeCompare(b.title))
+    .forEach((skill) => {
+      const skillHTML = getSkillHTML(skill);
+      skillContainerHTML.innerHTML = skillContainerHTML.innerHTML + skillHTML;
+    });
+})();
+
+//ANCHOR Skill Search Logic
 {
   const searchInput = document.getElementById("search-skills");
   const tags = document.querySelectorAll("#skill-container .tag");
@@ -129,24 +147,28 @@ document.getElementById('copyright').appendChild(document.createTextNode(new Dat
     );
     // If no matches return, show conditional element
     document.querySelectorAll("#skill-container .tag.is-hidden").length ===
-      document.querySelectorAll("#skill-container .tag").length
+    document.querySelectorAll("#skill-container .tag").length
       ? (noResultsEl.classList.remove("is-hidden"),
         container.classList.add("is-hidden"))
-      : (noResultsEl.classList.add("is-hidden"), container.classList.remove("is-hidden"));
+      : (noResultsEl.classList.add("is-hidden"),
+        container.classList.remove("is-hidden"));
   };
 }
 
 function getSkillHTML(skill) {
   return `
-  <span class="tag is-${skill.name}">
-    <span class="icon">
-      <i class="${skill.faName}"></i>
-    </span>
-    <span class="has-text-weight-medium">${skill.name}</span>
-  </span>`;
+  <span class="tag is-medium is-${skill.colorClass}">
+  ${
+    skill.iconClass &&
+    ` <span class="icon">
+  <i class="${skill.iconClass}"></i>
+</span>`
+  }
+  <span class="has-text-weight-medium">${skill.title}</span>
+</span>`;
 }
 
-// utils
+//ANCHOR utils
 function stringToHTML(str) {
   var dom = document.createElement("div");
   dom.innerHTML = str;
