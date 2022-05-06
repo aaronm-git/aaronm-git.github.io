@@ -1,5 +1,12 @@
 @import "./iconmoon.css";
 
+@media(max-width: 768px) {
+  .reverse-columns-mobile-only {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+}
+
 #intro {
   overflow: hidden;
   position: relative;
