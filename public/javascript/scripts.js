@@ -3,7 +3,7 @@ document
 	.getElementById("copyright")
 	.appendChild(document.createTextNode(new Date().getFullYear()));
 
-if (window.innerWidth < 500)
+if (window.innerWidth < 768)
 	document.querySelector(".timeline").classList.remove("is-centered");
 
 {
