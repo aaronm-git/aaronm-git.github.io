@@ -109,18 +109,9 @@ function getColorByBgColor(bgColor) {
 }
 //ANCHOR github API logic
 (async () => {
-	const seeMoreLink = stringToHTML(`<a
-		id="github-learn-more"
-		class="panel-block has-text-primary"
-		href="https://github.com/aaronm-git"
-		target="_blank"
-		rel="noreferrer"
-	>
-		<span class="panel-icon has-text-primary">
-			<i class="fab fa-github-alt" aria-hidden="true"></i>
-		</span>
-		<span class="repoName">See More</span>
-	</a>`);
+	const seeMoreLink = stringToHTML(
+		'<a id="github-learn-more" class="panel-block has-text-primary" href="https://github.com/aaronm-git"><span class="panel-icon has-text-primary"><i class="fab fa-github-alt" aria-hidden="true"></i></span><span class="repoName">See More</span></a>'
+	);
 	const websiteId = 255731256;
 	const repos = await fetch(
 		"https://api.github.com/users/aaronm-git/repos"
@@ -163,10 +154,10 @@ function getColorByBgColor(bgColor) {
 	const searchInput = document.getElementById("search-skills");
 	const tags = document.querySelectorAll("#skill-container .tag");
 	const noResultsEl = document.getElementById("no-skill");
-	const container = document.getElementById("skill-container");
+	const wrapper = document.getElementById("skills-wrapper");
 	// Add onkeyup function on search input
 	searchInput.onkeyup = (e) => {
-		// Initialize RegExp with dynamic variable and case insensetive
+		// Initialize RegExp with dynamic variable and case insensitive
 		const regex = new RegExp(`${searchInput.value}`, "i");
 		// Test each elementNode for regex match
 		tags.forEach((tag) =>
@@ -178,9 +169,9 @@ function getColorByBgColor(bgColor) {
 		document.querySelectorAll("#skill-container .tag.is-hidden").length ===
 		document.querySelectorAll("#skill-container .tag").length
 			? (noResultsEl.classList.remove("is-hidden"),
-			  container.classList.add("is-hidden"))
+			  wrapper.classList.add("is-hidden"))
 			: (noResultsEl.classList.add("is-hidden"),
-			  container.classList.remove("is-hidden"));
+			  wrapper.classList.remove("is-hidden"));
 	};
 }
 
@@ -233,23 +224,4 @@ function expandRepos() {
 		button.classList.add("active");
 		container.style.height = "auto";
 	}
-	// hideRepos();
 }
-
-// function hideRepos(){
-//   const button = document.getElementById("expandRepos");
-//   const container = document
-//   .getElementById("expandRepos")
-//   .closest("#panel-links-container");
-//   const repos = container.children;
-//   for (let i = 0; i < repos.length - 1; i++) {
-//     const repo = repos[i];
-//     if (i > 4 && !button.classList.contains("active")) {
-//       repo.classList.add("is-hidden");
-//     } else {
-//       repo.classList.remove("is-hidden");
-//     }
-//   }
-// }
-
-// hideRepos();
