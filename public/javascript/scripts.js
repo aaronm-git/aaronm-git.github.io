@@ -20,6 +20,15 @@ document
 	});
 }
 
+function getColorByBgColor(bgColor) {
+	if (!bgColor) {
+		return "";
+	}
+	return parseInt(bgColor.replace("#", ""), 16) > 0xffffff / 2
+		? "#000"
+		: "#fff";
+}
+
 //ANCHOR nav-burger logic
 {
 	document.addEventListener("DOMContentLoaded", () => {
@@ -126,7 +135,7 @@ document
 (() => {
 	const skillContainerHTML = document.getElementById("skill-container");
 	skills
-		// .sort((a, b) => a.title.localeCompare(b.title))
+		.sort((a, b) => (a.title > b.title ? 1 : -1))
 		.forEach((skill) => {
 			const skillHTML = getSkillHTML(skill);
 			skillContainerHTML.innerHTML = skillContainerHTML.innerHTML + skillHTML;
@@ -161,7 +170,15 @@ document
 
 function getSkillHTML(skill) {
 	return `
-  <span class="tag is-medium is-${skill.colorClass}">
+  <span class="tag is-medium ${
+		!skill.colorClass.includes("#") && "is-" + skill.colorClass
+	}" ${
+		skill.colorClass.includes("#")
+			? ` style="background-color: ${
+					skill.colorClass
+			  }; color: ${getColorByBgColor(skill.colorClass)};"`
+			: ""
+	}>
   ${
 		skill.iconClass &&
 		` <span class="icon">
