@@ -37,7 +37,6 @@
 		<link rel="stylesheet" href="./public/css/my-bulma-styles.min.css" />
 		<link rel="stylesheet" href="./public/css/style.css" />
 	</head>
-
 	<body>
 		<!-- ANCHOR navbar -->
 		<nav class="navbar is-fixed-top shadow">
@@ -785,34 +784,36 @@
 									value="aaronm-git.github.io: Contact Form Submission"
 									name="_subject"
 								/>
-								<div class="field is-grouped">
-									<div class="control">
+								<div class="field is-grouped is-justify-content-space-between">
+									<p class="control">
 										<button class="button is-primary">
 											<span class="icon">
 												<i class="fa fa-paper-plane"></i>
 											</span>
 											<span>Send</span>
 										</button>
-									</div>
+									</p>
+									<p class="control">
+										<a
+											href="https://formspree.io"
+											class="has-text-grey"
+											target="_blank"
+											rel="noreferrer"
+										>
+											<small>Powered By</small>
+											<img
+												src="./public/images/formspree-logo.png"
+												alt="powered by formspree.io"
+												style="
+													height: 22px;
+													margin-left: 6px;
+													position: relative;
+													top: 6px;
+												"
+											/>
+										</a>
+									</p>
 								</div>
-								<a
-									href="https://formspree.io"
-									class="has-text-right has-text-grey is-pulled-right"
-									target="_blank"
-									rel="noreferrer"
-								>
-									<small>Powered By</small>
-									<img
-										src="./public/images/formspree-logo.png"
-										alt="powered by formspree.io"
-										style="
-											height: 22px;
-											margin-left: 6px;
-											position: relative;
-											top: 6px;
-										"
-									/>
-								</a>
 							</form>
 						</div>
 					</div>
@@ -858,7 +859,7 @@
   const noResultsEl = document.getElementById("no-skill");
   // Add onkeyup function on search input
   searchInput.onkeyup = (e) => {
-    // Initialize RegExp with dynamic variable and case insensetive
+    // Initialize RegExp with dynamic variable and case insensitive
     const regex = new RegExp(`${searchInput.value}`, "i");
     // Test each elementNode for regex match
     tags.forEach((tag) =>
