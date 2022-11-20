@@ -106,6 +106,18 @@ function getColorByBgColor(bgColor) {
 }
 //ANCHOR github API logic
 (async () => {
+	const seeMoreLink = stringToHTML(`<a
+		id="github-learn-more"
+		class="panel-block has-text-primary"
+		href="https://github.com/aaronm-git"
+		target="_blank"
+		rel="noreferrer"
+	>
+		<span class="panel-icon has-text-primary">
+			<i class="fab fa-github-alt" aria-hidden="true"></i>
+		</span>
+		<span class="repoName">See More</span>
+	</a>`);
 	const websiteId = 255731256;
 	const repos = await fetch(
 		"https://api.github.com/users/aaronm-git/repos"
@@ -114,7 +126,7 @@ function getColorByBgColor(bgColor) {
 	repos.sort((a, b) =>
 		new Date(a.updated_at) < new Date(b.updated_at) ? 1 : -1
 	);
-	repos.forEach((repo) => {
+	repos.slice(0, 10).forEach((repo) => {
 		const panelLinkHTML = stringToHTML(getPanelLinkHTML());
 		panelLinkHTML.setAttribute("href", repo.html_url);
 		const iClassList = panelLinkHTML.querySelector("i").classList;
@@ -130,6 +142,7 @@ function getColorByBgColor(bgColor) {
 		}
 		panelLinksContainer.append(panelLinkHTML);
 	});
+	panelLinksContainer.append(seeMoreLink);
 })();
 
 (() => {
