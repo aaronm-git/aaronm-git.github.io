@@ -3,6 +3,9 @@ document
 	.getElementById("copyright")
 	.appendChild(document.createTextNode(new Date().getFullYear()));
 
+if (window.innerWidth < 768)
+	document.querySelector(".timeline").classList.remove("is-centered");
+
 {
 	new Typed("#typed", {
 		strings: [
