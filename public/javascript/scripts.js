@@ -110,7 +110,7 @@ function getColorByBgColor(bgColor) {
 //ANCHOR github API logic
 (async () => {
 	const seeMoreLink = stringToHTML(
-		'<a id="github-learn-more" class="panel-block has-text-primary" href="https://github.com/aaronm-git"><span class="panel-icon has-text-primary"><i class="fab fa-github-alt" aria-hidden="true"></i></span><span class="repoName">See More</span></a>'
+		'<a id="github-learn-more" class="panel-block has-text-primary" href="https://github.com/aaronm-git" rel="external" target="_blank"><span class="panel-icon has-text-primary"><i class="fab fa-github-alt" aria-hidden="true"></i></span><span class="repoName">See More</span></a>'
 	);
 	const websiteId = 255731256;
 	const repos = await fetch(
@@ -204,7 +204,7 @@ function stringToHTML(str) {
 }
 
 function getPanelLinkHTML() {
-	return `<a class="panel-block" href="">
+	return `<a class="panel-block" href="" rel="external" target="_blank">
       <span class="panel-icon">
         <i class="" aria-hidden="true"></i>
       </span>

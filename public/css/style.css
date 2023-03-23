@@ -76,4 +76,9 @@
 	.reverse-columns {
 		flex-flow: row-reverse;
 	}
+
+	.modal .modal-content {
+		width: auto;
+		max-width: 80%;
+	}
 }
