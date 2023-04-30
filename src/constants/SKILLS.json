@@ -1,0 +1,217 @@
+[
+	{
+		"title": "Foundation 6",
+		"iconClass": "",
+		"colorClass": "#1779BA"
+	},
+	{
+		"title": "AGILE Methodology",
+		"iconClass": "",
+		"colorClass": ""
+	},
+	{
+		"title": "Microservices Architecture",
+		"iconClass": "",
+		"colorClass": ""
+	},
+	{
+		"title": "CloudFormation (AWS)",
+		"iconClass": "amazonaws",
+		"colorClass": "color-aws"
+	},
+	{
+		"title": "SQS (AWS)",
+		"iconClass": "amazonaws",
+		"colorClass": "color-aws"
+	},
+	{
+		"title": "AppSync (AWS)",
+		"iconClass": "amazonaws",
+		"colorClass": "color-aws"
+	},
+	{
+		"title": "Lambda (AWS)",
+		"iconClass": "amazonaws",
+		"colorClass": "color-aws"
+	},
+	{
+		"title": "GraphQL",
+		"iconClass": "graphql",
+		"colorClass": "color-html5"
+	},
+	{
+		"title": "HTML5",
+		"iconClass": "html5",
+		"colorClass": "color-html5"
+	},
+	{
+		"title": "CSS3",
+		"iconClass": "css3",
+		"colorClass": "color-css3"
+	},
+	{
+		"title": "JavaScript",
+		"iconClass": "javascript",
+		"colorClass": "color-javascript"
+	},
+	{
+		"title": "Sass",
+		"iconClass": "sass",
+		"colorClass": "color-sass"
+	},
+	{
+		"title": "JQuery",
+		"iconClass": "jquery",
+		"colorClass": "info"
+	},
+	{
+		"title": "React",
+		"iconClass": "react",
+		"colorClass": "info"
+	},
+	{
+		"title": "Node.js",
+		"iconClass": "node-dot-js",
+		"colorClass": "color-nodejs"
+	},
+	{
+		"title": "MongoDB",
+		"iconClass": "mongodb",
+		"colorClass": "color-mongodb"
+	},
+	{
+		"title": "Responsive Design",
+		"iconClass": "",
+		"colorClass": ""
+	},
+	{
+		"title": "Bootstrap",
+		"iconClass": "bootstrap",
+		"colorClass": "color-bootstrap"
+	},
+	{
+		"title": "Bulma.io",
+		"iconClass": "",
+		"colorClass": "primary"
+	},
+	{
+		"title": "WordPress",
+		"iconClass": "wordpress",
+		"colorClass": "color-wordpress"
+	},
+	{
+		"title": "Git",
+		"iconClass": "git",
+		"colorClass": "color-git"
+	},
+	{
+		"title": "Adobe Creative Cloud",
+		"iconClass": "adobe",
+		"colorClass": "color-adobe"
+	},
+	{
+		"title": "Photoshop CC",
+		"iconClass": "adobephotoshop",
+		"colorClass": "color-photoshop"
+	},
+	{
+		"title": "Dreamweaver CC",
+		"iconClass": "adobedreamweaver",
+		"colorClass": "color-dreamweaver"
+	},
+	{
+		"title": "Amazon Web Services (AWS)",
+		"iconClass": "amazonaws",
+		"colorClass": "color-aws"
+	},
+	{
+		"title": "Route53 (AWS)",
+		"iconClass": "amazonaws",
+		"colorClass": "color-aws"
+	},
+	{
+		"title": "EC2 (AWS)",
+		"iconClass": "amazonaws",
+		"colorClass": "color-aws"
+	},
+	{
+		"title": "Elastic Beanstalk (AWS)",
+		"iconClass": "amazonaws",
+		"colorClass": "color-aws"
+	},
+	{
+		"title": "S3 (AWS)",
+		"iconClass": "amazonaws",
+		"colorClass": "color-aws"
+	},
+	{
+		"title": "Google Cloud Platform (GCP)",
+		"iconClass": "googlecloud",
+		"colorClass": "info"
+	},
+	{
+		"title": "Google App Engine (GCP)",
+		"iconClass": "googlecloud",
+		"colorClass": "info"
+	},
+	{
+		"title": "Heroku",
+		"iconClass": "heroku",
+		"colorClass": "color-heroku"
+	},
+	{
+		"title": "GitHub",
+		"iconClass": "github",
+		"colorClass": "github"
+	},
+	{
+		"title": "NoSQL",
+		"iconClass": "",
+		"colorClass": ""
+	},
+	{
+		"title": "Front-End Web Development",
+		"iconClass": "",
+		"colorClass": ""
+	},
+	{
+		"title": "Back-End Development",
+		"iconClass": "",
+		"colorClass": ""
+	},
+	{
+		"title": "JAM Stack Architecture",
+		"iconClass": "",
+		"colorClass": ""
+	},
+	{
+		"title": "JSX",
+		"iconClass": "",
+		"colorClass": ""
+	},
+	{
+		"title": "Model View Controller (MVC)",
+		"iconClass": "",
+		"colorClass": ""
+	},
+	{
+		"title": "Promises/Async/Await",
+		"iconClass": "",
+		"colorClass": ""
+	},
+	{
+		"title": "Graphic Design",
+		"iconClass": "",
+		"colorClass": ""
+	},
+	{
+		"title": "Flexbox",
+		"iconClass": "",
+		"colorClass": ""
+	},
+	{
+		"title": "Search Engine Optimization (SEO)",
+		"iconClass": "",
+		"colorClass": ""
+	}
+]

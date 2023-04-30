@@ -1,0 +1,101 @@
+@charset "utf-8";
+@import 'bulma/sass/utilities/initial-variables';
+@import 'bulma/sass/utilities/functions';
+@import 'bulma/sass/utilities/derived-variables';
+
+$green: #23d160;
+$primary: $green;
+$primary-invert: findColorInvert($green);
+$primary-light: findLightColor($green);
+$primary-dark: findDarkColor($green);
+
+// other variable
+$dimensions: 16 24 32 48 64 96 128 200;
+
+$addColors: (
+	'primary': (
+		$primary,
+		$primary-invert,
+		$primary-light,
+		$primary-dark
+	),
+	'twitter': (
+		#55acee,
+		findColorInvert(#55acee)
+	),
+	'linkedin': (
+		#0077b5,
+		findColorInvert(#0077b5)
+	),
+	'github': (
+		#333,
+		findColorInvert(#333)
+	)
+);
+
+$skillColors: (
+	'color-html5': (
+		#e44d26,
+		findColorInvert(#e44d26)
+	),
+	'color-css3': (
+		#55acee,
+		findColorInvert(#55acee)
+	),
+	'color-sass': (
+		#cf649a,
+		findColorInvert(#cf649a)
+	),
+	'color-mongodb': (
+		#009431,
+		findColorInvert(#009431)
+	),
+	'color-bootstrap': (
+		#563d7c,
+		findColorInvert(#563d7c)
+	),
+	'color-adobe': (
+		red,
+		findColorInvert(red)
+	),
+	'color-javascript': (
+		yellow,
+		findColorInvert(yellow)
+	),
+	'color-nodejs': (
+		#92c63d,
+		findColorInvert(#92c63d)
+	),
+	'color-wordpress': (
+		#207197,
+		findColorInvert(#207197)
+	),
+	'color-git': (
+		#e84e32,
+		findColorInvert(#e84e32)
+	),
+	'color-photoshop': (
+		#30b1fb,
+		findColorInvert(#30b1fb)
+	),
+	'color-dreamweaver': (
+		#adfa00,
+		findColorInvert(#34f902)
+	),
+	'color-aws': (
+		#f89400,
+		findColorInvert(#f89400)
+	),
+	'color-heroku': (
+		#5f15ac,
+		findColorInvert(#5f15ac)
+	)
+);
+
+$colors: map-merge($colors, $addColors);
+$colors: map-merge($colors, $skillColors);
+
+@import 'bulma/bulma.sass';
+@import 'bulma-timeline/src/sass/index.sass';
+
+@import 'icomoon.css';
