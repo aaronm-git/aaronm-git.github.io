@@ -115,7 +115,7 @@
 					>
 						Powered By
 						<img
-							src="github-logo.png"
+							src="/images/github-logo.png"
 							alt=""
 							class="is-inline"
 							style="height: 1.5rem; position: relative; top: 6px"
