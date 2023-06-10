@@ -50,7 +50,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-image: url('/hero-image-1.jpg');
+		background-image: url('/images/hero-image-1.jpg');
 		filter: grayscale(100%);
 		background-size: cover;
 		background-position: left;

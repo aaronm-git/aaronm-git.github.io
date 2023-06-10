@@ -15,7 +15,7 @@
 	<div class="columns" style="--image-position: {imagePosition === "right" ? 'row-reverse' : 'row'}">
 		{#if imageUrl}
 			<div class="column has-text-centered">
-				<SectionImage src={imageUrl} alt={imageAlt} sticky={imageSticky} />
+				<SectionImage src="/images/{imageUrl}" alt={imageAlt} sticky={imageSticky} />
 			</div>
 		{/if}
 		<div class="column">

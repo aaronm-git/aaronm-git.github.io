@@ -80,7 +80,7 @@
 									>
 										<small>Powered By</small>
 										<img
-											src="formspree-logo.png"
+											src="/images/formspree-logo.png"
 											alt="powered by formspree.io"
 											style="
 												height: 22px;

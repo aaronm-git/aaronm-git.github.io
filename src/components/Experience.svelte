@@ -6,7 +6,6 @@
 	const sectionOptions = {
 		id: 'experience',
 		title: 'Experience',
-		// imageUrl: 'experience.svg',
 		imageAlt: 'Experience',
 		imagePosition: 'right'
 	};
@@ -44,7 +43,7 @@
 			<div class="timeline-item is-primary">
 				<div class="timeline-marker is-primary is-image is-32x32">
 					<img
-						src="university-of-miami-logo.png"
+						src="/images/university-of-miami-logo.png"
 						style="height: 100%"
 						alt="University of Miami logo"
 					/>
@@ -72,7 +71,7 @@
 			</header>
 			<div class="timeline-item is-primary">
 				<div class="timeline-marker is-primary is-image is-32x32">
-					<img src="geek-squad-logo.png" alt="Geek Squad logo" />
+					<img src="/images/geek-squad-logo.png" alt="Geek Squad logo" />
 				</div>
 				<div class="timeline-content">
 					<div class="heading">
@@ -87,7 +86,7 @@
 			</header>
 			<div class="timeline-item is-primary">
 				<div class="timeline-marker is-primary is-image is-32x32">
-					<img src="practicepanther-logo.jpeg" alt="PracticePanther logo" />
+					<img src="/images/practicepanther-logo.jpeg" alt="PracticePanther logo" />
 				</div>
 				<div class="timeline-content">
 					<div class="heading">
@@ -117,7 +116,7 @@
 			</header>
 			<div class="timeline-item is-primary">
 				<div class="timeline-marker is-primary is-image is-32x32">
-					<img src="flying-academy.jpg" alt="Flying Academy logo" />
+					<img src="/images/flying-academy.jpg" alt="Flying Academy logo" />
 				</div>
 				<div class="timeline-content">
 					<div class="heading">
@@ -129,7 +128,7 @@
 			</div>
 			<div class="timeline-item is-primary">
 				<div class="timeline-marker is-primary is-image is-32x32">
-					<img src="upwork.jpg" alt="Upwork logo" />
+					<img src="/images/upwork.jpg" alt="Upwork logo" />
 				</div>
 				<div class="timeline-content">
 					<div class="heading">
@@ -144,7 +143,7 @@
 			</header>
 			<div class="timeline-item is-primary">
 				<div class="timeline-marker is-primary is-image is-32x32">
-					<img src="uplyft-logo.jpg" alt="Uplyft Capital logo" />
+					<img src="/images/uplyft-logo.jpg" alt="Uplyft Capital logo" />
 				</div>
 				<div class="timeline-content">
 					<div class="heading">
@@ -159,7 +158,7 @@
 			</header>
 			<div class="timeline-item is-primary">
 				<div class="timeline-marker is-primary is-image is-32x32">
-					<img src="originpc.png" alt="Origin PC logo" />
+					<img src="/images/originpc.png" alt="Origin PC logo" />
 				</div>
 				<div class="timeline-content">
 					<div class="heading">
@@ -171,7 +170,7 @@
 			</div>
 			<div class="timeline-item is-primary">
 				<div class="timeline-marker is-primary is-image is-32x32">
-					<img src="corsair.png" alt="Corsair logo" />
+					<img src="/images/corsair.png" alt="Corsair logo" />
 				</div>
 				<div class="timeline-content">
 					<div class="heading">
@@ -186,7 +185,7 @@
 			</header>
 			<div class="timeline-item is-primary">
 				<div class="timeline-marker is-primary is-image is-32x32">
-					<img src="miami-heat.jpeg" alt="Miami HEAT logo" />
+					<img src="/images/miami-heat.jpeg" alt="Miami HEAT logo" />
 				</div>
 				<div class="timeline-content">
 					<div class="heading">
@@ -198,7 +197,7 @@
 			</div>
 			<div class="timeline-item is-primary">
 				<div class="timeline-marker is-primary is-image is-32x32">
-					<img src="das-logo.jpeg" alt="Dealership Automation Services logo" />
+					<img src="/images/das-logo.jpeg" alt="Dealership Automation Services logo" />
 				</div>
 				<div class="timeline-content">
 					<div class="heading">
@@ -227,7 +226,7 @@
 		left: 0;
 		height: 100%;
 		width: 75%;
-		background-image: url('/experience.svg');
+		background-image: url('/images/experience.svg');
 		background-repeat: no-repeat;
 		background-position: 15%;
 		background-size: contain;

@@ -26,7 +26,7 @@
 			class="is-inline-block has-background-light pt-1 px-1"
 			style="border-radius: 4px;"
 		>
-			<img src="svelte-logo.png" alt="Made with Sveltekit" width="82" height="auto" />
+			<img src="/images/svelte-logo.png" alt="Made with Sveltekit" width="82" height="auto" />
 		</a>
 	</div>
 </footer>
