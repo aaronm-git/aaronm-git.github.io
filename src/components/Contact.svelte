@@ -6,7 +6,7 @@
 	const sectionOptions = {
 		id: 'contact',
 		title: 'Contact',
-		noPadding: true,
+		noPadding: true
 	};
 </script>
 
