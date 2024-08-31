@@ -12,21 +12,24 @@
 				>MIT</a
 			>.
 		</p>
-		<a href="https://bulma.io" rel="noreferrer" class="is-block">
-			<img
-				src="https://bulma.io/images/made-with-bulma.png"
-				alt="Made with Bulma"
-				width="128"
-				height="24"
-			/>
-		</a>
-		<a
-			href="https://svelte.dev"
-			rel="noreferrer"
-			class="is-inline-block has-background-light pt-1 px-1"
-			style="border-radius: 4px;"
-		>
-			<img src="/images/svelte-logo.png" alt="Made with Sveltekit" width="82" height="auto" />
-		</a>
+		<div class="is-flex is-flex-direction-row is-justify-content-center is-align-items-center">
+			<a href="https://bulma.io" rel="noreferrer" class="is-block">
+				<img
+					src="/images/bulma-logo-white.png"
+					alt="Made with Bulma"
+					width="128"
+					height="32"
+					class="mr-4"
+				/>
+			</a>
+			<a
+				href="https://svelte.dev"
+				rel="noreferrer"
+				class="is-inline-block has-background-light pt-1 px-1"
+				style="border-radius: 4px;"
+			>
+				<img src="/images/svelte-logo.png" alt="Made with Sveltekit" width="82" height="auto" />
+			</a>
+		</div>
 	</div>
 </footer>

@@ -13,7 +13,7 @@
 <Section {...sectionOptions}>
 	<div class="reverse-columns-mobile-only columns has-text-centered-mobile">
 		<div class="column">
-			<p class="block">
+			<!-- <p class="block">
 				As a seasoned Full-Stack Web Developer, I have worked with high-profile companies like the
 				NBA's Miami HEAT, contributing to the launch of their new website. I have also served as a
 				Front-end Web Developer at CORSAIR, a leading computer hardware and peripheral company. My
@@ -35,6 +35,26 @@
 				on the latest releases during my leisure time. I am also an avid Lego builder, and I
 				recently completed The Office set. As a highly motivated and dedicated Web Developer, I am
 				confident in my ability to contribute to any project and deliver outstanding results.
+			</p> -->
+
+			<p class="block">
+				With over 10 years of experience as a Senior Full-Stack JavaScript Developer, I specialize
+				in creating high-performance web applications using a variety of technologies, including
+				React, Next.js, Node.js, and AWS. My career has taken me from development of websites for
+				the Miami HEAT and Corsair to leading front-end development and key projects at Azamara
+				Cruises, where I developed custom CMS components and automated complex data processes. I'm
+				passionate about delivering innovative solutions that enhance user experience and drive
+				engagement.
+			</p>
+			<p class="block">
+				Based in Miami FL, I have a love for adventure that extends beyond coding. I love to
+				travel and enjoy taking cruises to explore new destinations and experiences. In my spare
+				time, you'll find me on the basketball court, playing pick-up games with friends, or working
+				on a new Lego set.
+			</p>
+			<p class="block">
+				I am always eager to take on new challenges and am open to short-term projects that allow me
+				to leverage my skills and passion for web development to make an impact.
 			</p>
 		</div>
 	</div>
